@@ -2,13 +2,23 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.sulcompagnie.si_atmo_mobile">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
+            android:usesCleartextTraffic="true"
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity
+                android:name=".SparepartActivity"
+                android:label="@string/title_activity_sparepart"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".DashboardActivity">
+        </activity>
         <activity
                 android:name=".MainActivity"
                 android:theme="@style/Theme.AppCompat.Light.NoActionBar">
