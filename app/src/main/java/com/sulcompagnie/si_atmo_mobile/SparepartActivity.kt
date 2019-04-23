@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.sulcompagnie.si_atmo_mobile.Adapter.SparepartAdapter
 import com.sulcompagnie.si_atmo_mobile.Api.ApiClient
 import com.sulcompagnie.si_atmo_mobile.Api.RetrofitClient
+import com.sulcompagnie.si_atmo_mobile.CRUD.TambahSparepartActivity
 import com.sulcompagnie.si_atmo_mobile.DAO.Sparepart
 
 import kotlinx.android.synthetic.main.activity_sparepart.*
@@ -42,8 +43,8 @@ class SparepartActivity : AppCompatActivity() {
                 })
         }
 
-        fab.setOnClickListener { view ->
-//            startActivity(Intent(this@SparepartActivity, TambahSparepartActivity::class))
+        fab.setOnClickListener {
+            startActivity(Intent(this@SparepartActivity, TambahSparepartActivity::class.java))
         }
 
         refreshLayout.setOnRefreshListener {

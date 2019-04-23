@@ -30,8 +30,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/SparepartActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+            <state relative-caret-position="408">
+              <caret line="50" column="28" lean-forward="true" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/TambahSparepartActivity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -69,6 +78,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/Api/ApiClient.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/Api/RetrofitClient.kt" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_sparepart.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/TambahSparepartActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/SparepartActivity.kt" />
       </list>
     </option>
@@ -94,11 +105,6 @@
             <path>
               <item name="Si-Atmo-Mobile" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
-            </path>
-            <path>
-              <item name="Si-Atmo-Mobile" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
@@ -120,6 +126,13 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="si_atmo_mobile" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="Api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Si-Atmo-Mobile" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="si_atmo_mobile" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="CRUD" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Si-Atmo-Mobile" type="1abcf292:AndroidViewProjectNode" />
@@ -152,6 +165,7 @@
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
+      <recent name="com.sulcompagnie.si_atmo_mobile.CRUD" />
       <recent name="com.sulcompagnie.si_atmo_mobile" />
     </key>
     <key name="android.template.parentActivityClass">
@@ -396,10 +410,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_sparepart.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="130" column="52" selection-start-line="130" selection-start-column="52" selection-end-line="130" selection-end-column="52" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/TambahSparepartActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/SparepartActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        <state relative-caret-position="408">
+          <caret line="50" column="28" lean-forward="true" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
         </state>
       </provider>
     </entry>
