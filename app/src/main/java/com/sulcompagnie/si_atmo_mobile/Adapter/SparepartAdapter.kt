@@ -1,9 +1,13 @@
 package com.sulcompagnie.si_atmo_mobile.Adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
+import com.sulcompagnie.si_atmo_mobile.CRUD.EditSparepartActivity
 import com.sulcompagnie.si_atmo_mobile.DAO.Sparepart
 import com.sulcompagnie.si_atmo_mobile.R
 import kotlinx.android.synthetic.main.layout_sparepart.view.*
@@ -29,7 +33,21 @@ class SparepartAdapter(val sparepart: List<Sparepart>) : RecyclerView.Adapter<Sp
         holder.view.hargaJual.text = "Harga Jual\t\t:\t" + sparepart.hargaJual
         holder.view.tempatPeletakan.text = "Tempat Peletakan\t\t:\t" + sparepart.tempatPeletakan
         holder.view.jumlahStok.text = "Jumlah Stok\t\t:\t" + sparepart.jumlahStok
+
+        holder.view.kodeSparepart.text = sparepart.kodeSparepart
     }
 
-    class SparepartViewHolder(val view: View) : RecyclerView.ViewHolder(view)
+    class SparepartViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
+        init {
+            view.setOnClickListener {
+                println(view.kodeSparepart)
+                val kodeSparepart = view.kodeSparepart.text.trim()
+
+                val intent = Intent(view.context, EditSparepartActivity::class.java)
+
+                intent.putExtra("kodeSparepart", kodeSparepart)
+                view.context.startActivity(intent)
+            }
+        }
+    }
 }

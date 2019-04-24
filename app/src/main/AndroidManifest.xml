@@ -12,6 +12,8 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
+        <activity android:name=".CRUD.EditSparepartActivity">
+        </activity>
         <activity android:name=".CRUD.TambahSparepartActivity">
         </activity>
         <activity

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Spinner
 import android.widget.Toast
 import com.sulcompagnie.si_atmo_mobile.Api.RetrofitClient
 import com.sulcompagnie.si_atmo_mobile.DAO.Sparepart
@@ -26,9 +27,11 @@ class TambahSparepartActivity : AppCompatActivity() {
         val btnBatal = findViewById<Button>(R.id.btnBatal)
         val btnTambah = findViewById<Button>(R.id.btnTambah)
 
+
+
         btnBatal.setOnClickListener {
-            val intent = Intent(this@TambahSparepartActivity, SparepartActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this@TambahSparepartActivity, SparepartActivity::class.java))
+            finish()
         }
 
         btnTambah.setOnClickListener {
