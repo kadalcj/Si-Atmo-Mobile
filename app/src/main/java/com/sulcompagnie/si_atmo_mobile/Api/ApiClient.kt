@@ -88,4 +88,11 @@ interface ApiClient {
         @Field("namaSales") tipeSparepart: String,
         @Field("noTelpSales") merkSparepart: String
     ):Call<Supplier>
+
+    //Search
+    @FormUrlEncoded
+    @POST("supplier/search")
+    fun searchSupplier(
+        @Field("namaPerusahaan") namaPerusahaan: String
+    ): Call<List<Supplier>>
 }

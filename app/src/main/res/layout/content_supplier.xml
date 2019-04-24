@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/edtSearch"
+            android:id="@+id/editSearch"
             app:layout_constraintEnd_toStartOf="@+id/btnCari" android:layout_marginEnd="10dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="10dp"
             android:textColor="@color/text" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp"
