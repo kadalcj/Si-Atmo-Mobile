@@ -27,8 +27,6 @@ class TambahSparepartActivity : AppCompatActivity() {
         val btnBatal = findViewById<Button>(R.id.btnBatal)
         val btnTambah = findViewById<Button>(R.id.btnTambah)
 
-
-
         btnBatal.setOnClickListener {
             startActivity(Intent(this@TambahSparepartActivity, SparepartActivity::class.java))
             finish()

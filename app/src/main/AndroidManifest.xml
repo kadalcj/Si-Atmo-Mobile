@@ -12,6 +12,13 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
+        <activity android:name=".CRUD.TambahSupplierActivity">
+        </activity>
+        <activity
+                android:name=".SupplierActivity"
+                android:label="@string/title_activity_supplier"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <activity android:name=".CRUD.EditSparepartActivity">
         </activity>
         <activity android:name=".CRUD.TambahSparepartActivity">

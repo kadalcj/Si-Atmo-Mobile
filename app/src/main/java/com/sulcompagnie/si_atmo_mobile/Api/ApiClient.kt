@@ -1,6 +1,7 @@
 package com.sulcompagnie.si_atmo_mobile.Api
 
 import com.sulcompagnie.si_atmo_mobile.DAO.Sparepart
+import com.sulcompagnie.si_atmo_mobile.DAO.Supplier
 import com.sulcompagnie.si_atmo_mobile.DAO.User
 import retrofit2.Call
 import retrofit2.Retrofit
@@ -74,6 +75,17 @@ interface ApiClient {
     ////////////////////////////////////////////////////////////////////////////
 
     //SUPPLIER
-//    @GET("supplier")
-//    fun getSupplier(): Call<List<Supplier>>
+    //All
+    @GET("supplier")
+    fun getSupplier(): Call<List<Supplier>>
+
+    //Tambah
+    @FormUrlEncoded
+    @POST("supplier")
+    fun storeSupplier(
+        @Field("namaPerusahaan") kodeSparepart: String,
+        @Field("alamatSupplier") namaSparepart: String,
+        @Field("namaSales") tipeSparepart: String,
+        @Field("noTelpSales") merkSparepart: String
+    ):Call<Supplier>
 }
