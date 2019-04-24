@@ -9,12 +9,11 @@ import retrofit2.http.*
 const val BASE_URL = "http://192.168.1.2:8000/api/"
 
 interface ApiClient {
+    //All
     @GET("sparepart")
     fun getSparepart(): Call<List<Sparepart>>
 
-//    @GET("supplier")
-//    fun getSupplier(): Call<List<Supplier>>
-
+    //Tambah
     @FormUrlEncoded
     @POST("sparepart")
     fun storeSparepart(
@@ -28,21 +27,26 @@ interface ApiClient {
         @Field("jumlahStok") jumlahStok: String
     ): Call<Sparepart>
 
-//    @FormUrlEncoded
-//    @POST("supplier")
-//    fun storeSupplier(
-//        @Field("namaPerusahaan") kodeSparepart: String,
-//        @Field("alamatSupplier") namaSparepart: String,
-//        @Field("namaSales") tipeSparepart: String,
-//        @Field("noTelpSales") merkSparepart: String
-//    ): Call<Supplier>
-
+    //Search
     @FormUrlEncoded
     @POST("sparepart/search")
     fun searchSparepart(
         @Field("namaSparepart") namaSparepart: String
     ): Call<List<Sparepart>>
 
+    //Update
+    @FormUrlEncoded
+    @PATCH("sparepart/{kodeSparepart}")
+    fun editSparepart(
+        @Path("kodeSparepart") kodeSparepart: String,
+        @Field("namaSparepart") namaSparepart: String,
+        @Field("tipeSparepart") tipeSparepart: String,
+        @Field("merkSparepart") merkSparepart: String,
+        @Field("hargaBeli") hargaBeli: String,
+        @Field("hargaJual") hargaJual: String
+    ): Call<Sparepart>
+
+    //Delete
     @DELETE("sparepart/{kodeSparepart}")
     fun deleteSparepart(
         @Path("kodeSparepart") kodeSparepart: String

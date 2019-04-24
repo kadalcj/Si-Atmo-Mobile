@@ -35,6 +35,14 @@ class SparepartAdapter(val sparepart: List<Sparepart>) : RecyclerView.Adapter<Sp
         holder.view.jumlahStok.text = "Jumlah Stok\t\t:\t" + sparepart.jumlahStok
 
         holder.view.kodeSparepart.text = sparepart.kodeSparepart
+        holder.view.namaSparepart.text = sparepart.namaSparepart
+        holder.view.tipeSparepart.text = sparepart.tipeSparepart
+        holder.view.merkSparepart.text = sparepart.merkSparepart
+        holder.view.hargaBeli.text = sparepart.hargaBeli
+        holder.view.hargaJual.text = sparepart.hargaJual
+        holder.view.tempatPeletakan.text = sparepart.tempatPeletakan
+        holder.view.jumlahStok.text = sparepart.jumlahStok
+
     }
 
     class SparepartViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
@@ -42,10 +50,24 @@ class SparepartAdapter(val sparepart: List<Sparepart>) : RecyclerView.Adapter<Sp
             view.setOnClickListener {
                 println(view.kodeSparepart)
                 val kodeSparepart = view.kodeSparepart.text.trim()
+                val namaSparepart = view.namaSparepart.text.trim()
+                val tipeSparepart = view.tipeSparepart.text.trim()
+                val merkSparepart = view.merkSparepart.text.trim()
+                val hargaBeli = view.hargaBeli.text.trim()
+                val hargaJual = view.hargaJual.text.trim()
+                val tempatPeletakan = view.tempatPeletakan.text.trim()
+                val jumlahStok = view.jumlahStok.text.trim()
 
                 val intent = Intent(view.context, EditSparepartActivity::class.java)
 
                 intent.putExtra("kodeSparepart", kodeSparepart)
+                intent.putExtra("namaSparepart", namaSparepart)
+                intent.putExtra("tipeSparepart", tipeSparepart)
+                intent.putExtra("merkSparepart", merkSparepart)
+                intent.putExtra("hargaBeli", hargaBeli)
+                intent.putExtra("hargaJual", hargaJual)
+                intent.putExtra("tempatPeletakan", tempatPeletakan)
+                intent.putExtra("jumlahStok", jumlahStok)
                 view.context.startActivity(intent)
             }
         }
