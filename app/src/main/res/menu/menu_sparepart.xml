@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Urut Bersasar Stok" android:id="@+id/sortByStok"/>
+    <item android:title="Urut Berdasar Harga" android:id="@+id/sortByHarga"/>
+</menu>

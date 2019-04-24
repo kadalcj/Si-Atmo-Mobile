@@ -3,6 +3,8 @@ package com.sulcompagnie.si_atmo_mobile
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 
 class DashboardActivity : AppCompatActivity() {
@@ -31,6 +33,21 @@ class DashboardActivity : AppCompatActivity() {
         btnDashLaporan.setOnClickListener {
 
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        when(item?.itemId) {
+            R.id.btnLogout-> {
+                startActivity(Intent(this@DashboardActivity, MainActivity::class.java))
+                finish()
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     override fun onBackPressed() {

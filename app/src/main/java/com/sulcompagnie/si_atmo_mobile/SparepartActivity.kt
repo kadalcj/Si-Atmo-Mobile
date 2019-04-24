@@ -2,6 +2,8 @@ package com.sulcompagnie.si_atmo_mobile
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
@@ -31,16 +33,7 @@ class SparepartActivity : AppCompatActivity() {
         btnCari.setOnClickListener {
             val namaSparepart = editSearch.text.toString().trim()
 
-            RetrofitClient.instance.searchSparepart(namaSparepart)
-                .enqueue(object: Callback<List<Sparepart>> {
-                    override fun onFailure(call: Call<List<Sparepart>>, t: Throwable) {
-                        Toast.makeText(applicationContext, "Tidak Ditemukan", Toast.LENGTH_SHORT).show()
-                    }
-
-                    override fun onResponse(call: Call<List<Sparepart>>, response: Response<List<Sparepart>>) {
-                        searchSparepart(namaSparepart)
-                    }
-                })
+            searchSparepart(namaSparepart)
         }
 
         fab.setOnClickListener {
@@ -53,10 +46,31 @@ class SparepartActivity : AppCompatActivity() {
         fetchSparepart()
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+//        return super.onCreateOptionsMenu(menu)
+
+        menuInflater.inflate(R.menu.menu_sparepart, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        when(item?.itemId) {
+            R.id.sortByStok-> {
+                sortByStok()
+            }
+
+            R.id.sortByHarga-> {
+                sortByHarga()
+            }
+        }
+
+        return super.onOptionsItemSelected(item)
+    }
+
     private fun fetchSparepart() {
         refreshLayout.isRefreshing = true
 
-        ApiClient().getSparepart().enqueue(object : Callback<List<Sparepart>> {
+        RetrofitClient.instance.getSparepart().enqueue(object : Callback<List<Sparepart>> {
             override fun onFailure(call: Call<List<Sparepart>>, t: Throwable) {
                 refreshLayout.isRefreshing = false
                 Toast.makeText(applicationContext, t.message, Toast.LENGTH_LONG).show()
@@ -76,7 +90,7 @@ class SparepartActivity : AppCompatActivity() {
     private fun searchSparepart(cari: String) {
         refreshLayout.isRefreshing = true
 
-        ApiClient().searchSparepart(cari).enqueue(object : Callback<List<Sparepart>> {
+        RetrofitClient.instance.searchSparepart(cari).enqueue(object : Callback<List<Sparepart>> {
             override fun onFailure(call: Call<List<Sparepart>>, t: Throwable) {
                 refreshLayout.isRefreshing = false
                 Toast.makeText(applicationContext, t.message, Toast.LENGTH_LONG).show()
@@ -96,5 +110,41 @@ class SparepartActivity : AppCompatActivity() {
     private fun  showSparepart(sparepart: List<Sparepart>) {
         recycleViewSparepart.layoutManager = LinearLayoutManager(this)
         recycleViewSparepart.adapter = SparepartAdapter(sparepart)
+    }
+
+    private fun sortByStok() {
+        RetrofitClient.instance.getSparepartByStok().enqueue(object : Callback<List<Sparepart>> {
+            override fun onFailure(call: Call<List<Sparepart>>, t: Throwable) {
+                refreshLayout.isRefreshing = false
+                Toast.makeText(applicationContext, t.message, Toast.LENGTH_LONG).show()
+            }
+
+            override fun onResponse(call: Call<List<Sparepart>>, response: Response<List<Sparepart>>) {
+                refreshLayout.isRefreshing = false
+                val sparepart = response.body()
+
+                sparepart?.let {
+                    showSparepart(it)
+                }
+            }
+        })
+    }
+
+    private fun sortByHarga() {
+        RetrofitClient.instance.getSparepartByHarga().enqueue(object : Callback<List<Sparepart>> {
+            override fun onFailure(call: Call<List<Sparepart>>, t: Throwable) {
+                refreshLayout.isRefreshing = false
+                Toast.makeText(applicationContext, t.message, Toast.LENGTH_LONG).show()
+            }
+
+            override fun onResponse(call: Call<List<Sparepart>>, response: Response<List<Sparepart>>) {
+                refreshLayout.isRefreshing = false
+                val sparepart = response.body()
+
+                sparepart?.let {
+                    showSparepart(it)
+                }
+            }
+        })
     }
 }

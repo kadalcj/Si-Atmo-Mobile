@@ -10,6 +10,7 @@ import retrofit2.http.*
 const val BASE_URL = "http://192.168.1.2:8000/api/"
 
 interface ApiClient {
+    //LOGIN
     @FormUrlEncoded
     @POST("login")
     fun loginApps(
@@ -17,9 +18,19 @@ interface ApiClient {
         @Field("password") password: String
     ): Call<User>
 
+    ////////////////////////////////////////////////////////////////////////////
+
+    //SPAREPART
     //All
     @GET("sparepart")
     fun getSparepart(): Call<List<Sparepart>>
+
+    //Sorting
+    @GET("sparepart/bystok")
+    fun getSparepartByStok(): Call<List<Sparepart>>
+
+    @GET("sparepart/byharga")
+    fun getSparepartByHarga(): Call<List<Sparepart>>
 
     //Tambah
     @FormUrlEncoded
@@ -60,13 +71,9 @@ interface ApiClient {
         @Path("kodeSparepart") kodeSparepart: String
     ): Call<Sparepart>
 
-    companion object {
-        operator fun invoke() : ApiClient {
-            return Retrofit.Builder()
-                .baseUrl(BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build()
-                .create(ApiClient::class.java)
-        }
-    }
+    ////////////////////////////////////////////////////////////////////////////
+
+    //SUPPLIER
+//    @GET("supplier")
+//    fun getSupplier(): Call<List<Supplier>>
 }
