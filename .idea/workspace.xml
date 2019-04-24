@@ -31,51 +31,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/EditSupplierActivity.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="64" column="76" selection-start-line="64" selection-start-column="76" selection-end-line="64" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit_supplier.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_supplier.xml">
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="55" column="44" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="44" />
+            <state relative-caret-position="391">
+              <caret line="50" column="38" lean-forward="true" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
             </state>
           </provider>
           <provider selected="true" editor-type-id="android-designer2" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/Api/ApiClient.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="104" column="18" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/TambahSupplierActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="53" selection-end-column="41" />
+            <state relative-caret-position="255">
+              <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
               <folding>
                 <element signature="e#46#534#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/EditSparepartActivity.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="121" column="56" selection-start-line="121" selection-start-column="56" selection-end-line="121" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -125,9 +98,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/DashboardActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/SparepartActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/Adapter/SparepartAdapter.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_supplier.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/TambahSparepartActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/TambahSupplierActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_sparepart.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_supplier.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/SupplierActivity.kt" />
@@ -137,6 +108,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/EditSparepartActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_supplier.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/EditSupplierActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_supplier.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/TambahSupplierActivity.kt" />
       </list>
     </option>
   </component>
@@ -332,7 +305,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16791044" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16791044" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -348,7 +321,7 @@
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info active="true" anchor="bottom" id="Build" order="7" visible="true" weight="0.20150054" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.20150054" />
       <window_info anchor="bottom" id="Android Profiler" order="8" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -503,14 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_supplier.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/SparepartActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1114">
@@ -543,22 +508,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_supplier.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="76" column="45" lean-forward="true" selection-end-line="80" selection-end-column="52" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_sparepart.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit_sparepart.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -599,7 +548,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/Api/ApiClient.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
+        <state relative-caret-position="442">
           <caret line="104" column="18" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
         </state>
       </provider>
@@ -611,13 +560,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/TambahSupplierActivity.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/EditSupplierActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="53" selection-end-column="41" />
-          <folding>
-            <element signature="e#46#534#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -629,10 +575,37 @@
       </provider>
       <provider selected="true" editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/EditSupplierActivity.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_supplier.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_sparepart.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_supplier.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="50" column="38" lean-forward="true" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/TambahSupplierActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="64" column="76" selection-start-line="64" selection-start-column="76" selection-end-line="64" selection-end-column="76" />
+        <state relative-caret-position="255">
+          <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+          <folding>
+            <element signature="e#46#534#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

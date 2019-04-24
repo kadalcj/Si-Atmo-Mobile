@@ -33,28 +33,28 @@ class TambahSupplierActivity : AppCompatActivity() {
 
         btnTambah.setOnClickListener {
             val namaPerusahaan = editNamaPerusahaan.text.toString().trim()
-            val alamatPerusahaan = editAlamatPerusahaan.text.toString().trim()
+            val alamatSupplier = editAlamatSupplier.text.toString().trim()
             val namaSales = editNamaSales.text.toString().trim()
-            val noTelp = editNoTelp.text.toString().trim()
+            val noTelpSales = editNoTelpSales.text.toString().trim()
 
             if(namaPerusahaan.isEmpty()) {
                 editNamaPerusahaan.error = "Nama Perusahaan Tidak Boleh Kosong"
                 return@setOnClickListener
             }
-            if(alamatPerusahaan.isEmpty()) {
-                editAlamatPerusahaan.error = "Nama Perusahaan Tidak Boleh Kosong"
+            if(alamatSupplier.isEmpty()) {
+                editAlamatSupplier.error = "Nama Perusahaan Tidak Boleh Kosong"
                 return@setOnClickListener
             }
             if(namaSales.isEmpty()) {
                 editNamaSales.error = "Nama Perusahaan Tidak Boleh Kosong"
                 return@setOnClickListener
             }
-            if(noTelp.isEmpty()) {
-                editNoTelp.error = "Nama Perusahaan Tidak Boleh Kosong"
+            if(noTelpSales.isEmpty()) {
+                editNoTelpSales.error = "Nama Perusahaan Tidak Boleh Kosong"
                 return@setOnClickListener
             }
 
-            RetrofitClient.instance.storeSupplier(namaPerusahaan, alamatPerusahaan, namaSales, noTelp).enqueue(object :
+            RetrofitClient.instance.storeSupplier(namaPerusahaan, alamatSupplier, namaSales, noTelpSales).enqueue(object :
                 Callback<com.sulcompagnie.si_atmo_mobile.DAO.Supplier> {
                 override fun onFailure(call: Call<com.sulcompagnie.si_atmo_mobile.DAO.Supplier>, t: Throwable) {
                     Toast.makeText(applicationContext, "Error", Toast.LENGTH_SHORT).show()
