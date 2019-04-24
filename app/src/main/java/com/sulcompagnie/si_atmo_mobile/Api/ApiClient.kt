@@ -1,6 +1,7 @@
 package com.sulcompagnie.si_atmo_mobile.Api
 
 import com.sulcompagnie.si_atmo_mobile.DAO.Sparepart
+import com.sulcompagnie.si_atmo_mobile.DAO.User
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -9,6 +10,13 @@ import retrofit2.http.*
 const val BASE_URL = "http://192.168.1.2:8000/api/"
 
 interface ApiClient {
+    @FormUrlEncoded
+    @POST("login")
+    fun loginApps(
+        @Field("email") email: String,
+        @Field("password") password: String
+    ): Call<User>
+
     //All
     @GET("sparepart")
     fun getSparepart(): Call<List<Sparepart>>
