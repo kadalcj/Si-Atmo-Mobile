@@ -95,7 +95,7 @@ class EditSparepartActivity : AppCompatActivity() {
         }
 
         btnHapus.setOnClickListener {
-            println(kodeSparepart.toString())
+//            println(kodeSparepart.toString())
             deleteSparepart(kodeSparepart)
         }
     }

@@ -83,10 +83,10 @@ interface ApiClient {
     @FormUrlEncoded
     @POST("supplier")
     fun storeSupplier(
-        @Field("namaPerusahaan") kodeSparepart: String,
-        @Field("alamatSupplier") namaSparepart: String,
-        @Field("namaSales") tipeSparepart: String,
-        @Field("noTelpSales") merkSparepart: String
+        @Field("namaPerusahaan") namaPerusahaan: String,
+        @Field("alamatSupplier") alamatSupplier: String,
+        @Field("namaSales") namaSales: String,
+        @Field("noTelpSales") noTelpSales: String
     ):Call<Supplier>
 
     //Search
@@ -95,4 +95,20 @@ interface ApiClient {
     fun searchSupplier(
         @Field("namaPerusahaan") namaPerusahaan: String
     ): Call<List<Supplier>>
+
+    //Update
+    @FormUrlEncoded
+    @PATCH("supplier/{namaPerusahaan}")
+    fun editSupplier(
+        @Path("namaPerusahaan") namaPerusahaan: String,
+        @Field("alamatSupplier") alamatSupplier: String,
+        @Field("namaSales") namaSales: String,
+        @Field("noTelpSales") noTelpSales: String
+    ): Call<Supplier>
+
+    //Delete
+    @DELETE("supplier/{namaPerusahaan}")
+    fun deleteSupplier(
+        @Path("namaPerusahaan") namaPerusahaan: String
+    ): Call<Supplier>
 }

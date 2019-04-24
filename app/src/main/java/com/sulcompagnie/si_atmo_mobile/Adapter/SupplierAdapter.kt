@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.sulcompagnie.si_atmo_mobile.CRUD.EditSupplierActivity
 import com.sulcompagnie.si_atmo_mobile.DAO.Supplier
 import com.sulcompagnie.si_atmo_mobile.R
 import kotlinx.android.synthetic.main.layout_supplier.view.*
@@ -28,19 +29,27 @@ class SupplierAdapter(val supplier: List<Supplier>): RecyclerView.Adapter<Suppli
 //        holder.view.noTelp.text = "No.Telp\t\t:\t" + supplier.noTelpSales
 
         holder.view.namaPerusahaan.text = supplier.namaPerusahaan
-        holder.view.alamatPerusahaan.text = supplier.alamatSupplier
+        holder.view.alamatSupplier.text = supplier.alamatSupplier
         holder.view.namaSales.text = supplier.namaSales
-        holder.view.noTelp.text = supplier.noTelpSales
+        holder.view.noTelpSales.text = supplier.noTelpSales
     }
 
     class SupplierViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         init {
             view.setOnClickListener {
-                println(view.namaPerusahaan.text)
+//                println(view.namaPerusahaan.text)
+                val namaPerusahaan = view.namaPerusahaan.text.trim()
+                val alamatSupplier = view.alamatSupplier.text.trim()
+                val namaSales = view.namaSales.text.trim()
+                val noTelpSales = view.noTelpSales.text.trim()
 
-//                val intent = Intent(view.context, EditSupplierActivity::class.java)
+                val intent = Intent(view.context, EditSupplierActivity::class.java)
 
-//                view.context.startActivity(intent)
+                intent.putExtra("namaPerusahaan", namaPerusahaan)
+                intent.putExtra("alamatSupplier", alamatSupplier)
+                intent.putExtra("namaSales", namaSales)
+                intent.putExtra("noTelpSales", noTelpSales)
+                view.context.startActivity(intent)
             }
         }
     }

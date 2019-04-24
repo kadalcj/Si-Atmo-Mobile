@@ -24,7 +24,7 @@
 
             <TextView
                     android:textColor="@color/text2"
-                    android:id="@+id/alamatPerusahaan"
+                    android:id="@+id/alamatSupplier"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Alamat Perusahaan"/>
@@ -38,7 +38,7 @@
 
             <TextView
                     android:textColor="@color/text2"
-                    android:id="@+id/noTelp"
+                    android:id="@+id/noTelpSales"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="No. Telp"/>
