@@ -1,5 +1,6 @@
 package com.sulcompagnie.si_atmo_mobile.Api
 
+import com.sulcompagnie.si_atmo_mobile.DAO.Pengadaan
 import com.sulcompagnie.si_atmo_mobile.DAO.Sparepart
 import com.sulcompagnie.si_atmo_mobile.DAO.Supplier
 import com.sulcompagnie.si_atmo_mobile.DAO.User
@@ -111,4 +112,9 @@ interface ApiClient {
     fun deleteSupplier(
         @Path("namaPerusahaan") namaPerusahaan: String
     ): Call<Supplier>
+
+    ////////////////////////////////////////////////////////////////////////////
+    //All
+    @GET("pemesanan")
+    fun getPengadaan(): Call<List<Pengadaan>>
 }
