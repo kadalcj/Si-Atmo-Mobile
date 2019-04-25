@@ -9,7 +9,8 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.*
 
-const val BASE_URL = "http://192.168.1.2:8000/api/"
+//const val BASE_URL = "http://192.168.1.2:8000/api/"
+const val BASE_URL = "http://10.53.14.227:8000/api/"
 
 interface ApiClient {
     //LOGIN
@@ -117,4 +118,20 @@ interface ApiClient {
     //All
     @GET("pemesanan")
     fun getPengadaan(): Call<List<Pengadaan>>
+
+    //Store
+    @FormUrlEncoded
+    @POST("pemesanan")
+    fun storePengadaan(
+        @Field("namaPerusahaan") namaPerusahaan: String,
+        @Field("jumlahPemesanan") jumlahPemesanan: String,
+        @Field("satuan") satuan: String,
+        @Field("kodeSparepart") kodeSparepart: String
+    ): Call<Pengadaan>
+
+    //Delete
+    @DELETE("pemesanan/{noPemesanan}")
+    fun deletePemesanan(
+        @Path("noPemesanan") noPemesanan: String
+    ): Call<Pengadaan>
 }

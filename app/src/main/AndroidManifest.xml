@@ -12,24 +12,27 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
-        <activity android:name=".CRUD.TambahPengadaanActivity">
+        <activity android:name=".CRUD.DetilPengadaanActivity"
+        android:label="Detil Pengadaan Sparepart">
+        </activity>
+        <activity android:name=".CRUD.TambahPengadaanActivity"
+        android:label="Input Pengadaan">
         </activity>
         <activity
                 android:name=".PengadaanActivity"
                 android:label="@string/title_activity_pengadaan"
-                android:theme="@style/AppTheme.NoActionBar"
-                android:parentActivityName=".DashboardActivity">
+                android:parentActivityName=".DashboardActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity
-                android:name=".CRUD.EditSupplierActivity">
+        <activity android:name=".CRUD.EditSupplierActivity">
         </activity>
         <activity android:name=".CRUD.TambahSupplierActivity">
         </activity>
         <activity
                 android:name=".SupplierActivity"
                 android:label="@string/title_activity_supplier"
-                android:theme="@style/AppTheme.NoActionBar"
-                android:parentActivityName=".DashboardActivity">
+                android:parentActivityName=".DashboardActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".CRUD.EditSparepartActivity">
         </activity>
@@ -38,8 +41,8 @@
         <activity
                 android:name=".SparepartActivity"
                 android:label="@string/title_activity_sparepart"
-                android:theme="@style/AppTheme.NoActionBar"
-                android:parentActivityName=".DashboardActivity">
+                android:parentActivityName=".DashboardActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".DashboardActivity">
         </activity>

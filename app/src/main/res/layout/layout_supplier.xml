@@ -17,7 +17,7 @@
                 android:background="@color/highlight">
             <TextView
                     android:textColor="@color/text2"
-                    android:id="@+id/namaPerusahaan"
+                    android:id="@+id/textNamaPerusahaan"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Nama Perusahaan"/>

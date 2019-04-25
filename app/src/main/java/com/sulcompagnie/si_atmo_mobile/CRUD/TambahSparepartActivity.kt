@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.Spinner
 import android.widget.Toast
 import com.sulcompagnie.si_atmo_mobile.Api.RetrofitClient
 import com.sulcompagnie.si_atmo_mobile.DAO.Sparepart
@@ -33,7 +32,7 @@ class TambahSparepartActivity : AppCompatActivity() {
         }
 
         btnTambah.setOnClickListener {
-            val kodeSparepart = editKodeSparepart.text.toString().trim()
+            val kodeSparepart = editKode.text.toString().trim()
             val namaSparepart= editNamaSparepart.text.toString().trim()
             val tipeSparepart = editTipeSparepart.text.toString().trim()
             val merkSparepart = editMerkSparepart.text.toString().trim()
@@ -43,7 +42,7 @@ class TambahSparepartActivity : AppCompatActivity() {
             val jumlahStok = 0
 
             if(kodeSparepart.isEmpty()){
-                editKodeSparepart.error = "Kode Sparepart Tidak Boleh Kosong"
+                editKode.error = "Kode Sparepart Tidak Boleh Kosong"
                 return@setOnClickListener
             }
             if(namaSparepart.isEmpty()){

@@ -17,24 +17,31 @@
                 android:background="@color/highlight">
             <TextView
                     android:textColor="@color/text2"
-                    android:id="@+id/namaPerusahaan"
+                    android:id="@+id/textNamaPerusahaan"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Nama Perusahaan"/>
+                    android:text="Nama Perusahaan" android:textSize="24sp"/>
 
             <TextView
                     android:textColor="@color/text2"
                     android:id="@+id/tanggalPemesanan"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Tanggal Pemesanan"/>
+                    android:text="Tanggal Pemesanan" android:textSize="24sp"/>
 
             <TextView
                     android:textColor="@color/text2"
                     android:id="@+id/statusPemesanan"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Status Pemesanan"/>
+                    android:text="Status Pemesanan" android:textSize="24sp"/>
+            <!--Hidden Data-->
+            <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/noPemesanan"
+                    android:text="NoPemesanan"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </LinearLayout>

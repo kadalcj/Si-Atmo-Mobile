@@ -6,15 +6,12 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import com.sulcompagnie.si_atmo_mobile.Api.ApiClient
 import com.sulcompagnie.si_atmo_mobile.Api.RetrofitClient
 import com.sulcompagnie.si_atmo_mobile.DAO.Sparepart
 import com.sulcompagnie.si_atmo_mobile.R
 import com.sulcompagnie.si_atmo_mobile.SparepartActivity
-import kotlinx.android.synthetic.main.activity_edit_sparepart.*
 import retrofit2.Call
 import retrofit2.Response
-import javax.security.auth.callback.Callback
 
 class EditSparepartActivity : AppCompatActivity() {
 
@@ -37,7 +34,7 @@ class EditSparepartActivity : AppCompatActivity() {
         val btnHapus = findViewById<Button>(R.id.btnHapus)
 
         //Set TextView
-        val editKodeSparepart = findViewById<TextView>(R.id.editKodeSparepart)
+        val editKodeSparepart = findViewById<TextView>(R.id.editKode)
         val editNamaSparepart = findViewById<TextView>(R.id.editNamaSparepart)
         val editTipeSparepart = findViewById<TextView>(R.id.editTipeSparepart)
         val editMerkSparepart = findViewById<TextView>(R.id.editMerkSparepart)

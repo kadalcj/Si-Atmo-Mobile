@@ -1,7 +1,7 @@
 package com.sulcompagnie.si_atmo_mobile.DAO
 
 data class Pengadaan (
-    val noPengadaan: String,
+    val noPemesanan: String,
     val namaPerusahaan: String,
     val tanggalPemesanan: String,
     val jumlahPemesanan: String,

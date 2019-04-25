@@ -28,7 +28,7 @@ class SupplierAdapter(val supplier: List<Supplier>): RecyclerView.Adapter<Suppli
 //        holder.view.namaSales.text = "Nama Sales\t\t:\t" + supplier.namaSales
 //        holder.view.noTelp.text = "No.Telp\t\t:\t" + supplier.noTelpSales
 
-        holder.view.namaPerusahaan.text = supplier.namaPerusahaan
+        holder.view.textNamaPerusahaan.text = supplier.namaPerusahaan
         holder.view.alamatSupplier.text = supplier.alamatSupplier
         holder.view.namaSales.text = supplier.namaSales
         holder.view.noTelpSales.text = supplier.noTelpSales
@@ -38,7 +38,7 @@ class SupplierAdapter(val supplier: List<Supplier>): RecyclerView.Adapter<Suppli
         init {
             view.setOnClickListener {
 //                println(view.namaPerusahaan.text)
-                val namaPerusahaan = view.namaPerusahaan.text.trim()
+                val namaPerusahaan = view.textNamaPerusahaan.text.trim()
                 val alamatSupplier = view.alamatSupplier.text.trim()
                 val namaSales = view.namaSales.text.trim()
                 val noTelpSales = view.noTelpSales.text.trim()
