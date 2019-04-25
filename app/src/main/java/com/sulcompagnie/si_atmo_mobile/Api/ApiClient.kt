@@ -45,7 +45,7 @@ interface ApiClient {
         @Field("hargaBeli") hargaBeli: String,
         @Field("hargaJual") hargaJual: String,
         @Field("tempatPeletakan") tempatPeletakan: String,
-        @Field("jumlahStok") jumlahStok: String
+        @Field("jumlahStok") jumlahStok: Int
     ): Call<Sparepart>
 
     //Search

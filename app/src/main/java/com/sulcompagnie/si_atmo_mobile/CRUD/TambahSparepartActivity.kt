@@ -40,7 +40,7 @@ class TambahSparepartActivity : AppCompatActivity() {
             val hargaBeli = editHargaBeli.text.toString().trim()
             val hargaJual = editHargaJual.text.toString().trim()
             val tempatPeletakan = editTempatPeletakan.text.toString().trim()
-            val jumlahStok = editJumlahStok.text.toString().trim()
+            val jumlahStok = 0
 
             if(kodeSparepart.isEmpty()){
                 editKodeSparepart.error = "Kode Sparepart Tidak Boleh Kosong"
@@ -68,10 +68,6 @@ class TambahSparepartActivity : AppCompatActivity() {
             }
             if(tempatPeletakan.isEmpty()){
                 editTempatPeletakan.error = "Tempat Peletakan Tidak Boleh Kosong"
-                return@setOnClickListener
-            }
-            if(jumlahStok.isEmpty()){
-                editJumlahStok.error = "Jumlah Stok Tidak Boleh Kosong"
                 return@setOnClickListener
             }
 

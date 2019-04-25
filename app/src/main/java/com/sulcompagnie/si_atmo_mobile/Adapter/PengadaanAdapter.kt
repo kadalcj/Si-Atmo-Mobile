@@ -1,5 +1,6 @@
 package com.sulcompagnie.si_atmo_mobile.Adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -29,7 +30,18 @@ class PengadaanAdapter(val pengadaan: List<Pengadaan>) : RecyclerView.Adapter<Pe
     class PengadaanViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         init {
             view.setOnClickListener {
-                println(view.namaPerusahaan)
+                println(view.tanggalPemesanan.text)
+
+//                val namaPerusahaan = view.namaPerusahaan
+//                val tanggalPemesanan = view.tanggalPemesanan
+//                val statusPemesanan = view.statusPemesanan
+
+//                val intent = Intent(view.context, EditPengadaanActivity::class.java)
+
+//                intent.putExtra("namaPerusahaan", namaPerusahaan)
+//                intent.putExtra("tanggalPemesanan", tanggalPemesanan)
+//                intent.putExtra("statusPemesanan", statusPemesanan)
+//                view.context.startActivity(intent)
             }
         }
     }
