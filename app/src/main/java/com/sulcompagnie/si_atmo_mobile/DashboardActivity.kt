@@ -27,7 +27,7 @@ class DashboardActivity : AppCompatActivity() {
         }
 
         btnDashPengadaan.setOnClickListener {
-
+            startActivity(Intent(this@DashboardActivity, PengadaanActivity::class.java))
         }
 
         btnDashLaporan.setOnClickListener {

@@ -28,6 +28,9 @@ class SparepartActivity : AppCompatActivity() {
         setContentView(R.layout.activity_sparepart)
         setSupportActionBar(toolbar)
 
+        val actionbar = supportActionBar
+        actionbar?.setDisplayHomeAsUpEnabled(true)
+
         val btnCari = findViewById<Button>(R.id.btnCari)
 
         btnCari.setOnClickListener {

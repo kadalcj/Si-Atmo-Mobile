@@ -27,6 +27,9 @@ class SupplierActivity : AppCompatActivity() {
         setContentView(R.layout.activity_supplier)
         setSupportActionBar(toolbar)
 
+        val actionbar = supportActionBar
+        actionbar?.setDisplayHomeAsUpEnabled(true)
+
         val btnCari = findViewById<Button>(R.id.btnCari)
 
         btnCari.setOnClickListener {

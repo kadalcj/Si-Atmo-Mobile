@@ -2,4 +2,5 @@
     <string name="app_name">SiAtmo Mobile</string>
     <string name="title_activity_sparepart">Sparepart</string>
     <string name="title_activity_supplier">Supplier</string>
+    <string name="title_activity_pengadaan">Pengadaan</string>
 </resources>
