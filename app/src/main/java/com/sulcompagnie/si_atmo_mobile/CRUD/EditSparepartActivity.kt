@@ -28,6 +28,7 @@ class EditSparepartActivity : AppCompatActivity() {
         val merkSparepart = intent.getStringExtra("merkSparepart")
         val hargaBeli = intent.getStringExtra("hargaBeli")
         val hargaJual = intent.getStringExtra("hargaJual")
+        val jumlahStok = intent.getStringExtra("jumlahStok")
 
         val btnBatal = findViewById<Button>(R.id.btnBatal)
         val btnEdit = findViewById<Button>(R.id.btnEdit)
@@ -40,6 +41,8 @@ class EditSparepartActivity : AppCompatActivity() {
         val editMerkSparepart = findViewById<TextView>(R.id.editMerkSparepart)
         val editHargaBeli = findViewById<TextView>(R.id.editHargaBeli)
         val editHargaJual = findViewById<TextView>(R.id.editHargaJual)
+        val editJumlahStok = findViewById<TextView>(R.id.editJumlahStok)
+
         //Set Text in TextView
         editKodeSparepart.text = kodeSparepart
         editNamaSparepart.text = namaSparepart
@@ -47,6 +50,7 @@ class EditSparepartActivity : AppCompatActivity() {
         editMerkSparepart.text = merkSparepart
         editHargaBeli.text = hargaBeli
         editHargaJual.text = hargaJual
+        editJumlahStok.text = jumlahStok
 
         btnBatal.setOnClickListener {
             startActivity(Intent(this@EditSparepartActivity, SparepartActivity::class.java))
@@ -84,6 +88,10 @@ class EditSparepartActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
             if(hargaJual.isEmpty()){
+                editHargaJual.error = "Harga Jual Tidak Boleh Kosong"
+                return@setOnClickListener
+            }
+            if(jumlahStok.isEmpty()){
                 editHargaJual.error = "Harga Jual Tidak Boleh Kosong"
                 return@setOnClickListener
             }

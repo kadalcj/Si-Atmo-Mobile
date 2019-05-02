@@ -16,33 +16,8 @@
             android:ems="10"
             android:id="@+id/editKode"
             android:hint="Kode Sparepart"
-            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/editSatuan"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="20dp" android:layout_marginEnd="20dp"
-            app:layout_constraintHorizontal_bias="0.0"/>
-    <EditText
-            android:textColorHint="@color/text2"
-            android:textColor="@color/text2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editSatuan"
-            android:hint="Satuan"
-            android:layout_marginTop="11dp" app:layout_constraintTop_toBottomOf="@+id/editJumlahPemesanan"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="20dp" android:layout_marginEnd="20dp"
-    />
-    <EditText
-            android:textColorHint="@color/text2"
-            android:textColor="@color/text2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:id="@+id/editJumlahPemesanan"
-            android:inputType="number" android:hint="Jumlah Pemesanan"
-            android:layout_marginTop="12dp"
-            app:layout_constraintTop_toBottomOf="@+id/editNamaPerusahaan" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editSatuan" android:layout_marginBottom="14dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/btnTambah"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
     <EditText
@@ -52,12 +27,38 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
+            android:id="@+id/editSatuan"
+            android:hint="Satuan"
+            app:layout_constraintTop_toBottomOf="@+id/editJumlahPemesanan" android:layout_marginBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/editKode"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+    <EditText
+            android:textColorHint="@color/text2"
+            android:textColor="@color/text2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editJumlahPemesanan"
+            android:inputType="number" android:hint="Jumlah Pemesanan"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerNamaPerusahaan" android:layout_marginBottom="11dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/editSatuan"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+    <EditText
+            android:visibility="gone"
+            android:textColorHint="@color/text2"
+            android:textColor="@color/text2"
+            android:layout_width="371dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
             android:id="@+id/editNamaPerusahaan"
             android:hint="Nama Perusahaan"
-            android:layout_marginTop="11dp" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="20dp" android:layout_marginEnd="20dp"
-    />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/spinnerNamaPerusahaan"
+            app:layout_constraintEnd_toStartOf="@+id/spinnerNamaPerusahaan"
+            app:layout_constraintBottom_toTopOf="parent"/>
     <Button
             android:textColor="@color/text2"
             android:backgroundTint="@color/background"
@@ -65,6 +66,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnTambah"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="14dp"
-            app:layout_constraintTop_toBottomOf="@+id/editKode" app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@+id/editKode" android:layout_marginBottom="446dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <Spinner
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/spinnerNamaPerusahaan"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="18dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/editJumlahPemesanan" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

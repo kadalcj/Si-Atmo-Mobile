@@ -56,7 +56,7 @@
             android:id="@+id/editMerkSparepart"
             android:textColor="@color/text2"
             android:hint="Merk Sparepart"
-            android:layout_marginTop="21dp"
+            android:layout_marginTop="20dp"
             app:layout_constraintTop_toBottomOf="@+id/editTipeSparepart" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
@@ -68,29 +68,29 @@
             android:id="@+id/editHargaBeli"
             android:textColor="@color/text2"
             android:hint="Harga Beli" android:contentDescription="Harga" android:inputType="numberDecimal"
-            android:layout_marginTop="21dp"
-            app:layout_constraintTop_toBottomOf="@+id/editMerkSparepart" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+            android:layout_marginStart="20dp" android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp" app:layout_constraintTop_toBottomOf="@+id/editMerkSparepart"/>
     <Button
             android:text="Batal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnBatal"
             android:textColor="@color/text2" android:background="@color/highlight"
-            android:layout_marginTop="21dp"
-            app:layout_constraintTop_toBottomOf="@+id/editHargaJual" app:layout_constraintEnd_toStartOf="@+id/btnEdit"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="25dp"
-            android:layout_marginStart="25dp"/>
+            app:layout_constraintEnd_toStartOf="@+id/btnEdit" android:layout_marginBottom="19dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnHapus" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="6dp" android:layout_marginEnd="28dp"
+    />
     <Button
             android:text="Edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnEdit"
             android:textColor="@color/text2" android:background="@color/highlight"
-            app:layout_constraintStart_toEndOf="@+id/btnBatal" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="21dp" app:layout_constraintTop_toBottomOf="@+id/editHargaJual"
-            android:layout_marginStart="25dp" android:layout_marginEnd="25dp"/>
+            android:layout_marginTop="36dp"
+            app:layout_constraintTop_toBottomOf="@+id/editJumlahStok" app:layout_constraintStart_toEndOf="@+id/btnBatal"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
     <EditText
             android:textColorHint="@color/text2"
@@ -100,16 +100,32 @@
             android:id="@+id/editHargaJual"
             android:textColor="@color/text2"
             android:hint="Harga Jual" android:inputType="numberDecimal"
-            android:layout_marginTop="20dp"
-            app:layout_constraintTop_toBottomOf="@+id/editHargaBeli" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+            android:layout_marginStart="20dp" android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp" app:layout_constraintTop_toBottomOf="@+id/editHargaBeli"/>
+
+    <EditText
+            android:enabled="false"
+            android:textColorHint="@color/text2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editJumlahStok"
+            android:textColor="@color/text2"
+            android:hint="Jumlah Stok" android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp" android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/editHargaJual"/>
+
     <Button
             android:layout_width="252dp"
             android:layout_height="wrap_content"
             android:id="@+id/btnHapus"
             android:textColor="@color/text2" android:background="@color/highlight"
             android:text="Hapus"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="21dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnBatal" app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="19dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnEdit" app:layout_constraintEnd_toEndOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

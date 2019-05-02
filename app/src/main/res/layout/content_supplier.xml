@@ -11,33 +11,37 @@
         tools:context=".SupplierActivity">
     <EditText
             android:textColorHint="@color/text2"
-            android:layout_width="283dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/editSearch"
-            app:layout_constraintEnd_toStartOf="@+id/btnCari" android:layout_marginEnd="10dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="10dp"
-            android:textColor="@color/text" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp"
-            android:hint="Cari"/>
+            android:textColor="@color/text"
+            android:hint="Cari"
+            android:layout_marginTop="16dp" app:layout_constraintEnd_toStartOf="@+id/btnCari"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="15dp" android:layout_marginEnd="16dp"
+    />
     <Button
             android:text="Cari"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnCari" android:layout_marginEnd="10dp" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/btnCari"
             android:background="@color/highlight" android:textColor="@color/text"
-            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="12dp" android:layout_marginBottom="9dp"
-            app:layout_constraintBottom_toTopOf="@+id/refreshLayout"/>
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/editSearch" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="14dp" app:layout_constraintBottom_toTopOf="@+id/refreshLayout"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="9dp"/>
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-            android:layout_width="395dp"
-            android:layout_height="0dp" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnCari" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="8dp" android:id="@+id/refreshLayout">
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/refreshLayout"
+            app:layout_constraintTop_toBottomOf="@+id/btnCari" android:layout_marginBottom="5dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
         <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycleViewSupplier"
-                android:layout_width="395dp"
+                android:layout_width="match_parent"
                 android:layout_height="598dp" tools:layout_editor_absoluteY="69dp" tools:layout_editor_absoluteX="8dp"/>
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

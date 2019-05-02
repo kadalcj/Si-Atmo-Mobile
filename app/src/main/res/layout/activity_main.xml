@@ -29,6 +29,7 @@
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="16dp" app:layout_constraintEnd_toEndOf="parent"/>
     <EditText
+            android:text="owner@gmail.com"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
@@ -41,6 +42,7 @@
             android:layout_marginStart="62dp" app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginEnd="62dp"/>
     <EditText
+            android:text="ownerpass"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:ems="10"

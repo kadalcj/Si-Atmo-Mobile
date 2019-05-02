@@ -16,6 +16,7 @@
                 android:padding="15dp"
                 android:background="@color/highlight">
             <TextView
+                    android:textSize="30sp"
                     android:textColor="@color/text2"
                     android:id="@+id/textNamaPerusahaan"
                     android:layout_width="match_parent"
@@ -23,6 +24,7 @@
                     android:text="Nama Perusahaan"/>
 
             <TextView
+                    android:visibility="gone"
                     android:textColor="@color/text2"
                     android:id="@+id/alamatSupplier"
                     android:layout_width="match_parent"
@@ -30,6 +32,7 @@
                     android:text="Alamat Perusahaan"/>
 
             <TextView
+                    android:textSize="24sp"
                     android:textColor="@color/text2"
                     android:id="@+id/namaSales"
                     android:layout_width="match_parent"
@@ -37,6 +40,7 @@
                     android:text="Nama Sales"/>
 
             <TextView
+                    android:visibility="gone"
                     android:textColor="@color/text2"
                     android:id="@+id/noTelpSales"
                     android:layout_width="match_parent"
