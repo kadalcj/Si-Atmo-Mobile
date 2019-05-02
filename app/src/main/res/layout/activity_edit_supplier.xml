@@ -51,7 +51,7 @@
             android:textColorHint="@color/text2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
+            android:inputType="phone"
             android:ems="10"
             android:id="@+id/editNoTelpSales"
             android:textColor="@color/text2"

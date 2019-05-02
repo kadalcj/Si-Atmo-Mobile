@@ -148,6 +148,14 @@ interface ApiClient {
         @Field("kodeSparepart") kodeSparepart: String
     ): Call<Pengadaan>
 
+    //Update Status
+    @FormUrlEncoded
+    @POST("pemesanan/status/{noPemesanan}")
+    fun updateStatus(
+        @Path("noPemesanan") noPemesanan: String,
+        @Field("statusPemesanan") statusPemesanan:String
+    ): Call<Pengadaan>
+
     //Delete
     @DELETE("pemesanan/{noPemesanan}")
     fun deletePemesanan(

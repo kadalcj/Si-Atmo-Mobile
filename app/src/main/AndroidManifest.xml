@@ -3,6 +3,7 @@
           package="com.sulcompagnie.si_atmo_mobile">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
             android:allowBackup="true"
@@ -12,6 +13,10 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
+        <activity android:name=".CRUD.UpdateStatusPengadaanActivity">
+        </activity>
+        <activity android:name=".PengadaanLaporanActivity">
+        </activity>
         <activity android:name=".CRUD.TambahDetilPengadaanActivity">
         </activity>
         <activity

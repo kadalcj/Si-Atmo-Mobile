@@ -25,22 +25,27 @@ class TambahPengadaanActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tambah_pengadaan)
 
-        val spinnerNama = findViewById<Spinner>(R.id.spinnerNamaPerusahaan)
+//        val spinnerNama = findViewById<Spinner>(R.id.spinnerNamaPerusahaan)
 
 //        spinnerNama.adapter = ArrayAdapter<String>(this@TambahPengadaanActivity, android.R.layout.simple_spinner_dropdown_item, )
+
+        val spinnerSatuan = findViewById<Spinner>(R.id.spinnerSatuan)
+        val status = arrayOf("Buah", "Dus")
+
+        spinnerSatuan.adapter = ArrayAdapter<String>(this@TambahPengadaanActivity, android.R.layout.simple_spinner_dropdown_item, status)
 
         val btnTambah = findViewById<Button>(R.id.btnTambah)
 
         btnTambah.setOnClickListener {
             val editNamaPerusahaan = editNamaPerusahaan.text.toString().trim()
             val editJumlahPemesanan = editJumlahPemesanan.text.toString().trim()
-            val editSatuan = editSatuan.text.toString().trim()
+            val editSatuan = spinnerSatuan.selectedItem.toString().trim()
             val editKodeSparepart = editKode.text.toString().trim()
 
             storePengadaan(editNamaPerusahaan, editJumlahPemesanan, editSatuan, editKodeSparepart)
         }
 
-        getSpinner()
+//        getSpinner()
     }
 
     private fun storePengadaan(namaPerusahaan: String, jumlahStok: String, satuan: String, kodeSparepart: String) {

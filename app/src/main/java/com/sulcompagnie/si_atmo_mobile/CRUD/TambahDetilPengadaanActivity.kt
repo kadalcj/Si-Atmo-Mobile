@@ -26,7 +26,7 @@ class TambahDetilPengadaanActivity : AppCompatActivity() {
         val intent = intent
 
         val spinSatuan = findViewById<Spinner>(R.id.spinSatuan)
-        val satuan = arrayOf("buah", "dus")
+        val satuan = arrayOf("Buah", "Dus")
 
         spinSatuan.adapter = ArrayAdapter<String>(this@TambahDetilPengadaanActivity, android.R.layout.simple_spinner_dropdown_item, satuan)
 
@@ -51,9 +51,14 @@ class TambahDetilPengadaanActivity : AppCompatActivity() {
                 }
 
                 override fun onResponse(call: Call<Pengadaan>, response: Response<Pengadaan>) {
-                    startActivity(Intent(this@TambahDetilPengadaanActivity, PengadaanActivity::class.java))
-                    finish()
-                    Toast.makeText(applicationContext, "Berhasil Tambah Item Pengadaan", Toast.LENGTH_SHORT).show()
+                    if(response.isSuccessful) {
+                        startActivity(Intent(this@TambahDetilPengadaanActivity, PengadaanActivity::class.java))
+                        finish()
+                        Toast.makeText(applicationContext, "Berhasil Tambah Item Pengadaan", Toast.LENGTH_SHORT).show()
+                    }
+                    else {
+                        Toast.makeText(applicationContext, "Gagal Menambah Item", Toast.LENGTH_SHORT).show()
+                    }
                 }
             })
         }
