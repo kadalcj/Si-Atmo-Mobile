@@ -41,6 +41,7 @@ class DetilPengadaanActivity : AppCompatActivity() {
         val textTanggalPemesanan = findViewById<TextView>(R.id.textTanggalPemesanan)
         val textStatusPemesanan = findViewById<TextView>(R.id.textStatusPemesanan)
 
+        val btnTambah = findViewById<Button>(R.id.btnTambahDetil)
         val btnHapus = findViewById<Button>(R.id.btnHapus)
 
         //Change Text
@@ -51,7 +52,14 @@ class DetilPengadaanActivity : AppCompatActivity() {
         refreshLayout.setOnRefreshListener {
             fetchDetil(noPemesanan)
         }
-        fetchDetil(noPemesanan)
+//        fetchDetil(noPemesanan)
+
+        btnTambah.setOnClickListener {
+            val intent = Intent(this@DetilPengadaanActivity, TambahDetilPengadaanActivity::class.java)
+
+            intent.putExtra("noPemesanan", noPemesanan)
+            startActivity(intent)
+        }
 
         btnHapus.setOnClickListener {
 //            println(noPemesanan)

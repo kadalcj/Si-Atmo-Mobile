@@ -5,6 +5,7 @@ import com.sulcompagnie.si_atmo_mobile.DAO.Sparepart
 import com.sulcompagnie.si_atmo_mobile.DAO.Supplier
 import com.sulcompagnie.si_atmo_mobile.DAO.User
 import retrofit2.Call
+import retrofit2.Callback
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.*
@@ -132,6 +133,16 @@ interface ApiClient {
     @POST("pemesanan")
     fun storePengadaan(
         @Field("namaPerusahaan") namaPerusahaan: String,
+        @Field("jumlahPemesanan") jumlahPemesanan: String,
+        @Field("satuan") satuan: String,
+        @Field("kodeSparepart") kodeSparepart: String
+    ): Call<Pengadaan>
+
+    //Add Detil
+    @FormUrlEncoded
+    @POST("pemesanan/add")
+    fun addDetilPengadaan(
+        @Field("noPemesanan") noPemesanan: String,
         @Field("jumlahPemesanan") jumlahPemesanan: String,
         @Field("satuan") satuan: String,
         @Field("kodeSparepart") kodeSparepart: String
