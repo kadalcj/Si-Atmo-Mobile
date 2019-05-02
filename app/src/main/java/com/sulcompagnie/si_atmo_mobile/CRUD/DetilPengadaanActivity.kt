@@ -5,14 +5,19 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.sulcompagnie.si_atmo_mobile.Adapter.DetilPengadaanAdapter
 import com.sulcompagnie.si_atmo_mobile.Api.RetrofitClient
 import com.sulcompagnie.si_atmo_mobile.DAO.Pengadaan
 import com.sulcompagnie.si_atmo_mobile.PengadaanActivity
 import com.sulcompagnie.si_atmo_mobile.R
-import com.sulcompagnie.si_atmo_mobile.SparepartActivity
-import org.w3c.dom.Text
+import kotlinx.android.synthetic.main.activity_detil_pengadaan.*
+import kotlinx.android.synthetic.main.content_pengadaan.*
+import kotlinx.android.synthetic.main.content_pengadaan.refreshLayout
+import kotlinx.android.synthetic.main.content_supplier.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -29,7 +34,7 @@ class DetilPengadaanActivity : AppCompatActivity() {
         val noPemesanan = intent.getStringExtra("noPemesanan")
         val namaPerusahaan = intent.getStringExtra("namaPerusahaan")
         val tanggalPemesanan = intent.getStringExtra("tanggalPemesanan")
-        val statusPemesanan = intent.getStringExtra("statusPemesanaan")
+        val statusPemesanan = intent.getStringExtra("statusPemesanan")
 
         //Set Text
         val textNamaPerusahaan = findViewById<TextView>(R.id.textNamaPerusahaan)
@@ -43,10 +48,40 @@ class DetilPengadaanActivity : AppCompatActivity() {
         textTanggalPemesanan.text = tanggalPemesanan
         textStatusPemesanan.text = statusPemesanan
 
+        refreshLayout.setOnRefreshListener {
+            fetchDetil(noPemesanan)
+        }
+        fetchDetil(noPemesanan)
+
         btnHapus.setOnClickListener {
 //            println(noPemesanan)
             batalPesan(noPemesanan)
         }
+    }
+
+    private fun fetchDetil(noPemesanan: String) {
+        refreshLayout.isRefreshing = true
+
+        RetrofitClient.instance.getDetilPengadaan(noPemesanan).enqueue(object : Callback<List<Pengadaan>> {
+            override fun onFailure(call: Call<List<Pengadaan>>, t: Throwable) {
+                refreshLayout.isRefreshing = false
+                Toast.makeText(applicationContext, t.message, Toast.LENGTH_LONG).show()
+            }
+
+            override fun onResponse(call: Call<List<Pengadaan>>, response: Response<List<Pengadaan>>) {
+                refreshLayout.isRefreshing = false
+                val pengadaan = response.body()
+
+                pengadaan?.let {
+                    showDetilPengadaan(it)
+                }
+            }
+        })
+    }
+
+    private fun showDetilPengadaan(pengadaan: List<Pengadaan>) {
+        recycleViewDetil.layoutManager = LinearLayoutManager(this)
+        recycleViewDetil.adapter = DetilPengadaanAdapter(pengadaan)
     }
 
     private fun batalPesan(noPemesanan: String) {

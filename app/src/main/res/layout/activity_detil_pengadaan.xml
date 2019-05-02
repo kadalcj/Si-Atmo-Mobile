@@ -12,27 +12,31 @@
             android:text="Nama Perusahaan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textNamaPerusahaan" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/textNamaPerusahaan"
+            android:textColor="@color/text2" android:textSize="24sp"
             android:layout_marginTop="21dp"
-            app:layout_constraintTop_toTopOf="parent" android:textColor="@color/text2" android:textSize="24sp"/>
+            android:layout_marginBottom="21dp" app:layout_constraintEnd_toEndOf="@+id/textTanggalPemesanan"
+            app:layout_constraintBottom_toTopOf="@+id/textTanggalPemesanan" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="9dp"/>
     <TextView
             android:text="Tanggal Pemesanan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textTanggalPemesanan" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/textTanggalPemesanan"
             android:textColor="@color/text2" android:textSize="24sp"
-            app:layout_constraintHorizontal_bias="0.497" android:layout_marginTop="21dp"
-            app:layout_constraintTop_toBottomOf="@+id/textNamaPerusahaan"/>
+            app:layout_constraintTop_toBottomOf="@+id/textNamaPerusahaan" android:layout_marginBottom="22dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/textStatusPemesanan"
+            app:layout_constraintStart_toStartOf="parent"/>
     <TextView
             android:text="Status Pemesanan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textStatusPemesanan" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/textStatusPemesanan"
             android:textColor="@color/text2" android:textSize="24sp"
-            android:layout_marginTop="21dp" app:layout_constraintTop_toBottomOf="@+id/textTanggalPemesanan"/>
+            app:layout_constraintTop_toBottomOf="@+id/textTanggalPemesanan" android:layout_marginEnd="7dp"
+            android:layout_marginBottom="21dp"
+            app:layout_constraintEnd_toEndOf="@+id/textTanggalPemesanan"
+            app:layout_constraintBottom_toTopOf="@+id/btnHapus"/>
 
     <Button
             android:layout_width="wrap_content"
@@ -41,7 +45,21 @@
             android:id="@+id/btnHapus"
             android:textColor="@color/text2"
             android:backgroundTint="@color/background"
-            android:layout_marginTop="21dp"
-            app:layout_constraintTop_toBottomOf="@+id/textStatusPemesanan" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@+id/textStatusPemesanan" android:layout_marginBottom="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/textStatusPemesanan"
+            app:layout_constraintBottom_toTopOf="@+id/refreshLayout"
+            app:layout_constraintStart_toStartOf="@+id/textStatusPemesanan"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/refreshLayout"
+            app:layout_constraintTop_toBottomOf="@+id/btnHapus"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleViewDetil"
+                android:layout_width="match_parent"
+                android:layout_height="598dp" tools:layout_editor_absoluteY="69dp" tools:layout_editor_absoluteX="8dp"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -117,9 +117,15 @@ interface ApiClient {
     ): Call<Supplier>
 
     ////////////////////////////////////////////////////////////////////////////
+    //PENGADAAN
     //All
     @GET("pemesanan")
     fun getPengadaan(): Call<List<Pengadaan>>
+
+    @POST("pemesanan/{noPemesanan}")
+    fun getDetilPengadaan(
+        @Path("noPemesanan") noPemesanan: String
+    ): Call<List<Pengadaan>>
 
     //Store
     @FormUrlEncoded

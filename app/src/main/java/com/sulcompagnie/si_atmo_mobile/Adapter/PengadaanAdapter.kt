@@ -23,7 +23,7 @@ class PengadaanAdapter(val pengadaan: List<Pengadaan>) : RecyclerView.Adapter<Pe
     override fun onBindViewHolder(holder: PengadaanViewHolder, position: Int) {
         val pengadaan = pengadaan[position]
 
-        holder.view.noPemesanan.text = pengadaan.noPemesanan.toString()
+        holder.view.noPemesanan.text = pengadaan.noPemesanan
         holder.view.textNamaPerusahaan.text = pengadaan.namaPerusahaan
         holder.view.tanggalPemesanan.text = pengadaan.tanggalPemesanan
         holder.view.statusPemesanan.text = pengadaan.statusPemesanan
