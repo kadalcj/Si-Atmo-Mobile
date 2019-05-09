@@ -1,9 +1,6 @@
 package com.sulcompagnie.si_atmo_mobile.Api
 
-import com.sulcompagnie.si_atmo_mobile.DAO.Pengadaan
-import com.sulcompagnie.si_atmo_mobile.DAO.Sparepart
-import com.sulcompagnie.si_atmo_mobile.DAO.Supplier
-import com.sulcompagnie.si_atmo_mobile.DAO.User
+import com.sulcompagnie.si_atmo_mobile.DAO.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Retrofit
@@ -166,4 +163,8 @@ interface ApiClient {
     fun deletePemesanan(
         @Path("noPemesanan") noPemesanan: String
     ): Call<Pengadaan>
+
+    //Transaksi Sparepart
+    @GET("transaksisparepart")
+    fun getTransSparepart(): Call<List<TransaksiSparepart>>
 }

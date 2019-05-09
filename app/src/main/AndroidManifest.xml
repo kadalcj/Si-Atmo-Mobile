@@ -13,6 +13,10 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
+        <activity android:name=".CRUD.DashPencarianTransaksiSparepartActivity">
+        </activity>
+        <activity android:name=".PencarianTransaksiActivity">
+        </activity>
         <activity android:name=".CRUD.UpdateStatusPengadaanActivity">
         </activity>
         <activity android:name=".PengadaanLaporanActivity">

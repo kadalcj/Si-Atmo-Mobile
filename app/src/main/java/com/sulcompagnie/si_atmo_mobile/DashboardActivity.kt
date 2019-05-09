@@ -17,7 +17,9 @@ import androidx.annotation.RequiresApi
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import com.sulcompagnie.si_atmo_mobile.Api.RetrofitClient
+import com.sulcompagnie.si_atmo_mobile.CRUD.DashPencarianTransaksiSparepartActivity
 import com.sulcompagnie.si_atmo_mobile.DAO.Sparepart
+import kotlinx.android.synthetic.main.activity_dashboard.*
 import retrofit2.Call
 import retrofit2.Response
 
@@ -25,11 +27,6 @@ class DashboardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
-
-        val btnDashSparepart = findViewById<Button>(R.id.btnDashSparepart)
-        val btnDashSupplier = findViewById<Button>(R.id.btnDashSupplier)
-        val btnDashPengadaan = findViewById<Button>(R.id.btnDashPengadaan)
-        val btnDashLaporan = findViewById<Button>(R.id.btnDashLaporan)
 
         btnDashSparepart.setOnClickListener {
             startActivity(Intent(this@DashboardActivity, SparepartActivity::class.java))
@@ -45,6 +42,10 @@ class DashboardActivity : AppCompatActivity() {
 
         btnDashLaporan.setOnClickListener {
 
+        }
+
+        btnDashTransaksi.setOnClickListener {
+            startActivity(Intent(this@DashboardActivity, DashPencarianTransaksiSparepartActivity::class.java))
         }
 
         pushNotif()
