@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CRUD.DetilTransaksiSparepartActivity"
+        android:background="@color/background">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Kode Nota"
+              android:id="@+id/textKodeNota"
+              android:textSize="34sp"
+              android:textColor="@color/text2"
+              app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+              android:layout_marginTop="16dp" android:layout_marginStart="17dp"
+              app:layout_constraintBottom_toTopOf="@+id/textTanggalTransaksi"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Tanggal Transaksi"
+              android:id="@+id/textTanggalTransaksi"
+              android:textSize="24sp"
+              android:textColor="@color/text2"
+              app:layout_constraintStart_toStartOf="@+id/textKodeNota"
+              app:layout_constraintTop_toBottomOf="@+id/textKodeNota"
+              app:layout_constraintBottom_toTopOf="@+id/textTanggalLunas"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Tanggal Lunas"
+              android:id="@+id/textTanggalLunas"
+              android:textSize="24sp"
+              android:textColor="@color/text2"
+              app:layout_constraintStart_toStartOf="@+id/textTanggalTransaksi"
+              app:layout_constraintTop_toBottomOf="@+id/textTanggalTransaksi"
+              app:layout_constraintBottom_toTopOf="@+id/textSubTotal"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Sub Total"
+              android:id="@+id/textSubTotal"
+              android:textSize="24sp"
+              android:textColor="@color/text2"
+              app:layout_constraintStart_toStartOf="@+id/textTanggalLunas"
+              app:layout_constraintTop_toBottomOf="@+id/textTanggalLunas"
+              app:layout_constraintBottom_toTopOf="@+id/textDiskon"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Diskon"
+              android:id="@+id/textDiskon"
+              android:textSize="24sp"
+              android:textColor="@color/text2"
+              app:layout_constraintStart_toStartOf="@+id/textSubTotal"
+              app:layout_constraintTop_toBottomOf="@+id/textSubTotal"
+              app:layout_constraintBottom_toTopOf="@+id/textTota"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Total"
+              android:id="@+id/textTota"
+              android:textSize="24sp"
+              android:textColor="@color/text2"
+              app:layout_constraintStart_toStartOf="@+id/textDiskon"
+              app:layout_constraintTop_toBottomOf="@+id/textDiskon"
+              app:layout_constraintBottom_toTopOf="@+id/textStatusTransaksi"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Status Transaksi"
+              android:id="@+id/textStatusTransaksi"
+              android:textSize="24sp"
+              android:textColor="@color/text2"
+              app:layout_constraintStart_toStartOf="@+id/textTota" app:layout_constraintTop_toBottomOf="@+id/textTota"
+              app:layout_constraintBottom_toTopOf="@+id/textNamaKonsumen"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Nama Konsumen"
+              android:id="@+id/textNamaKonsumen"
+              android:textSize="24sp"
+              android:textColor="@color/text2"
+              app:layout_constraintStart_toStartOf="@+id/textStatusTransaksi"
+              app:layout_constraintTop_toBottomOf="@+id/textStatusTransaksi"
+              app:layout_constraintBottom_toTopOf="@+id/textNoTelp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Nomor Telpon"
+              android:id="@+id/textNoTelp"
+              android:textSize="24sp"
+              android:textColor="@color/text2"
+              app:layout_constraintStart_toStartOf="@+id/textNamaKonsumen"
+              app:layout_constraintTop_toBottomOf="@+id/textNamaKonsumen"
+              app:layout_constraintBottom_toTopOf="@+id/textAlamatKonsumen"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Alamat Konsumen"
+              android:id="@+id/textAlamatKonsumen"
+              android:textSize="24sp"
+              android:textColor="@color/text2"
+              app:layout_constraintStart_toStartOf="@+id/textNoTelp"
+              app:layout_constraintTop_toBottomOf="@+id/textNoTelp" android:layout_marginBottom="8dp"
+              app:layout_constraintBottom_toTopOf="@+id/refreshLayout"/>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/refreshLayout"
+            app:layout_constraintTop_toBottomOf="@+id/textAlamatKonsumen" android:layout_marginBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginEnd="8dp">
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleViewDetil"
+                android:layout_width="match_parent"
+                android:layout_height="500dp" tools:layout_editor_absoluteY="69dp" tools:layout_editor_absoluteX="8dp"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

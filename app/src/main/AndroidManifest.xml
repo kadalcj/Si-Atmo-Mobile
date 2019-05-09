@@ -13,7 +13,14 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
-        <activity android:name=".CRUD.DashPencarianTransaksiSparepartActivity">
+        <activity
+                android:name=".CRUD.DetilTransaksiSparepartActivity"
+                android:label="Detil History Transaksi"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".CRUD.DashPencarianTransaksiSparepartActivity"
+                android:label="History Transaksi">
         </activity>
         <activity android:name=".PencarianTransaksiActivity">
         </activity>

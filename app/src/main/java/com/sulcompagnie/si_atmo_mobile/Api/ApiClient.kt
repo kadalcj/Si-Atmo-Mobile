@@ -167,4 +167,9 @@ interface ApiClient {
     //Transaksi Sparepart
     @GET("transaksisparepart")
     fun getTransSparepart(): Call<List<TransaksiSparepart>>
+
+    @GET("transaksisparepart/{kodeNota}")
+    fun getDetilTransSparepart(
+        @Path("kodeNota") kodeNota: String
+    ): Call<List<DetilTransaksiSparepart>>
 }

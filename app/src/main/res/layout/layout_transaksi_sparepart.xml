@@ -73,7 +73,6 @@
                     android:layout_height="match_parent"
                     android:text="Status Transaksi"/>
             <TextView
-                    android:visibility="gone"
                     android:textSize="24sp"
                     android:textColor="@color/text2"
                     android:id="@+id/textNamaKonsumen"
@@ -81,7 +80,6 @@
                     android:layout_height="match_parent"
                     android:text="Nama Konsumen"/>
             <TextView
-                    android:visibility="gone"
                     android:textSize="24sp"
                     android:textColor="@color/text2"
                     android:id="@+id/textNoTelp"

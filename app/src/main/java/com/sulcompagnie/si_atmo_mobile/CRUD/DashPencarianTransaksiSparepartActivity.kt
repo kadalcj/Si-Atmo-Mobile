@@ -8,7 +8,7 @@ import com.sulcompagnie.si_atmo_mobile.Adapter.TransaksiSparepartAdapter
 import com.sulcompagnie.si_atmo_mobile.Api.RetrofitClient
 import com.sulcompagnie.si_atmo_mobile.DAO.TransaksiSparepart
 import com.sulcompagnie.si_atmo_mobile.R
-import kotlinx.android.synthetic.main.activity_pencarian_transaksi.*
+import kotlinx.android.synthetic.main.activity_dash_pencarian_transaksi_sparepart.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -18,7 +18,7 @@ class DashPencarianTransaksiSparepartActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 //        setContentView(R.layout.activity_dash_pencarian_transaksi_sparepart)
-        setContentView(R.layout.activity_pencarian_transaksi)
+        setContentView(R.layout.activity_dash_pencarian_transaksi_sparepart)
 
         refreshLayout.setOnRefreshListener {
             fetchTransaksi()

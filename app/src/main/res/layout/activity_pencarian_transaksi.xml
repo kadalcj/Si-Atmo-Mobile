@@ -1,19 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".PencarianTransaksiActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
 
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/refreshLayout">
-        <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycleViewTransaksiSparepart"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp">
+
+        <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="598dp" tools:layout_editor_absoluteY="69dp" tools:layout_editor_absoluteX="8dp"/>
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@color/highlight">
+
+            <TextView
+                    android:textSize="30sp"
+                    android:textColor="@color/text2"
+                    android:id="@+id/textKodeNota"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Kode Nota"/>
+            <TextView
+                    android:textSize="24sp"
+                    android:textColor="@color/text2"
+                    android:id="@+id/textTanggalTransaksi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Tangal Transaksi"/>
+
+            <TextView
+                    android:textSize="24sp"
+                    android:textColor="@color/text2"
+                    android:id="@+id/textTanggalLunas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Tanggal Lunas"/>
+            <TextView
+                    android:textSize="24sp"
+                    android:textColor="@color/text2"
+                    android:id="@+id/textSubTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Sub Total"/>
+            <TextView
+                    android:textSize="24sp"
+                    android:textColor="@color/text2"
+                    android:id="@+id/textDiskon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Diskon"/>
+            <TextView
+                    android:textSize="24sp"
+                    android:textColor="@color/text2"
+                    android:id="@+id/textTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Total"/>
+            <TextView
+                    android:textSize="24sp"
+                    android:textColor="@color/text2"
+                    android:id="@+id/textStatusTransaksi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Status Transaksi"/>
+            <TextView
+                    android:textSize="24sp"
+                    android:textColor="@color/text2"
+                    android:id="@+id/textNamaKonsumen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Nama Konsumen"/>
+            <TextView
+                    android:textSize="24sp"
+                    android:textColor="@color/text2"
+                    android:id="@+id/textNoTelp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Nomor Telpon"/>
+            <TextView
+                    android:textSize="24sp"
+                    android:textColor="@color/text2"
+                    android:id="@+id/textAlamatKonsumen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Alamat Konsumen"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -15,6 +15,6 @@ class PengadaanLaporanActivity : AppCompatActivity() {
         val noPemesanan = intent.getStringExtra("noPemesanan")
 
 //        webview.loadUrl("https://10.53.4.20:8000/api/pemesanan/downloadPDF/" + noPemesanan + ".pdf")
-        webview.loadUrl("https://10.53.4.20:8000/api/pemesanan/downloadPDF/" + noPemesanan)
+        webview.loadUrl("http://10.53.7.16:8000/api/pemesanan/printPreview/" + noPemesanan)
     }
 }

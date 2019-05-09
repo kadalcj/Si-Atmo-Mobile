@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@color/highlight">
+
+            <TextView
+                    android:textSize="30sp"
+                    android:textColor="@color/text2"
+                    android:id="@+id/textKodeSparepart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Kode Nota"/>
+            <TextView
+                    android:textSize="24sp"
+                    android:textColor="@color/text2"
+                    android:id="@+id/textJumlahSparepart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Jumlah Sparepart"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -5,13 +5,55 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".CRUD.DashPencarianTransaksiSparepartActivity">
+        tools:context=".CRUD.DashPencarianTransaksiSparepartActivity"
+        android:background="@color/background">
 
     <EditText
+            android:textColor="@color/text2"
+            android:textColorHint="@color/text2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Nomor Kendaraan"
+            android:id="@+id/editPlat"
+            android:layout_marginTop="16dp" android:layout_marginBottom="10dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/editNoTelp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text2"
+            android:textColorHint="@color/text2"
+            android:hint="Nomor Telpon"
+            android:id="@+id/editNoTelp"
+            app:layout_constraintTop_toBottomOf="@+id/editPlat" android:layout_marginBottom="9dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/btnCari"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+    <Button
+            android:backgroundTint="@color/background"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="Name"
-            android:ems="10"
-            tools:layout_editor_absoluteY="16dp" tools:layout_editor_absoluteX="16dp" android:id="@+id/editText"/>
+            android:textColor="@color/text2"
+            android:text="CARI"
+            android:id="@+id/btnCari"
+            app:layout_constraintTop_toBottomOf="@+id/editNoTelp" android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/refreshLayout"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/refreshLayout"
+            app:layout_constraintTop_toBottomOf="@+id/btnCari"
+            android:layout_marginBottom="8dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp">
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleViewTransaksiSparepart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" tools:layout_editor_absoluteY="69dp"
+                tools:layout_editor_absoluteX="8dp"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
