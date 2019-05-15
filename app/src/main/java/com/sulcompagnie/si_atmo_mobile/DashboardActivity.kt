@@ -26,11 +26,11 @@ import retrofit2.Call
 import retrofit2.Response
 
 class DashboardActivity : AppCompatActivity() {
-    lateinit var notificationManager: NotificationManager
-    lateinit var notificationChannel: NotificationChannel
-    lateinit var builder: Notification.Builder
-    private  val channelId = "com.sulcompagnie.si_atmo_mobile"
-    private val description = "Stok Sparepart Notification"
+//    lateinit var notificationManager: NotificationManager
+//    lateinit var notificationChannel: NotificationChannel
+//    lateinit var builder: Notification.Builder
+//    private  val channelId = "com.sulcompagnie.si_atmo_mobile"
+//    private val description = "Stok Sparepart Notification"
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,7 +50,7 @@ class DashboardActivity : AppCompatActivity() {
         }
 
         btnDashLaporan.setOnClickListener {
-//
+            startActivity(Intent(this@DashboardActivity, LaporanActivity::class.java))
         }
 
         btnDashTransaksi.setOnClickListener {
@@ -64,15 +64,14 @@ class DashboardActivity : AppCompatActivity() {
         RetrofitClient.instance.getPushNotif().enqueue(object : retrofit2.Callback<List<Sparepart>> {
             override fun onFailure(call: Call<List<Sparepart>>, t: Throwable) {
                 //Nothing To Do
-                Log.d("Push", "Error Boss")
+                Log.d("NOTIFICATION", "Error Boss")
             }
 
-            @RequiresApi(Build.VERSION_CODES.O)
             override fun onResponse(call: Call<List<Sparepart>>, response: Response<List<Sparepart>>) {
                 if(response.isSuccessful) {
-                    Log.d("Push", "Harusnya Oke")
+                    Log.d("NOTIFICATION", "Harusnya Oke")
 
-                    var builder = NotificationCompat.Builder(this@DashboardActivity, "com.sulcompagnie.si_atmo_mobile")
+                    val builder = NotificationCompat.Builder(this@DashboardActivity, "com.sulcompagnie.si_atmo_mobile")
                         .setSmallIcon(R.drawable.notif_logo_24dp)
                         .setContentTitle("SiAtmo Mobile Alert")
                         .setContentText("Beberapa Sparepart yang ada digudang melewati batas stok minimum, silahkan lakukan pengecekan untuk lebih jelasnya.")
@@ -98,7 +97,7 @@ class DashboardActivity : AppCompatActivity() {
 //                          .setContentText("Beberapa Sparepart yang ada digudang melewati batas stok minumum, silahkan lakukan pengecekan untuk lebih detil.")
                 }
                 else {
-                    Log.d("Push", "Kok Bisa?")
+                    Log.d("NOTIFICATION", "Kok Bisa?")
                 }
             }
         })

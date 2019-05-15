@@ -2,6 +2,7 @@ package com.sulcompagnie.si_atmo_mobile
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.sulcompagnie.si_atmo_mobile.Api.RetrofitClient
 import kotlinx.android.synthetic.main.activity_pengadaan_laporan.*
 
 class PengadaanLaporanActivity : AppCompatActivity() {
@@ -12,9 +13,9 @@ class PengadaanLaporanActivity : AppCompatActivity() {
 
         val intent = intent
 
+        val BASEURL = RetrofitClient.BASE_URL
         val noPemesanan = intent.getStringExtra("noPemesanan")
 
-//        webview.loadUrl("https://10.53.4.20:8000/api/pemesanan/downloadPDF/" + noPemesanan + ".pdf")
-        webview.loadUrl("http://10.53.7.16:8000/api/pemesanan/printPreview/" + noPemesanan)
+        webview.loadUrl(BASEURL + noPemesanan)
     }
 }

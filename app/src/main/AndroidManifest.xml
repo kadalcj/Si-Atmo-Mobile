@@ -13,6 +13,8 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
+        <activity android:name=".LaporanActivity">
+        </activity>
         <activity
                 android:name=".CRUD.DetilTransaksiSparepartActivity"
                 android:label="Detil History Transaksi"

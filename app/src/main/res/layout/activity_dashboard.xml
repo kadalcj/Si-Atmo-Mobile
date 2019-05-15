@@ -62,7 +62,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@color/highlight"
-            android:text="PENCARIAN TRANSAKSI"
+            android:text="History Transaksi"
             android:textColor="@color/text"
             android:textSize="25dp"
             app:layout_constraintTop_toBottomOf="@+id/btnDashLaporan" android:layout_marginBottom="181dp"
