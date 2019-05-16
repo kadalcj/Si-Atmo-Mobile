@@ -3,9 +3,7 @@ package com.sulcompagnie.si_atmo_mobile.CRUD
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
-import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -13,12 +11,9 @@ import com.sulcompagnie.si_atmo_mobile.Adapter.DetilPengadaanAdapter
 import com.sulcompagnie.si_atmo_mobile.Api.RetrofitClient
 import com.sulcompagnie.si_atmo_mobile.DAO.Pengadaan
 import com.sulcompagnie.si_atmo_mobile.PengadaanActivity
-import com.sulcompagnie.si_atmo_mobile.PengadaanLaporanActivity
 import com.sulcompagnie.si_atmo_mobile.R
 import kotlinx.android.synthetic.main.activity_detil_pengadaan.*
-import kotlinx.android.synthetic.main.content_pengadaan.*
 import kotlinx.android.synthetic.main.content_pengadaan.refreshLayout
-import kotlinx.android.synthetic.main.content_supplier.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

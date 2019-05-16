@@ -2,9 +2,6 @@ package com.sulcompagnie.si_atmo_mobile.Api
 
 import com.sulcompagnie.si_atmo_mobile.DAO.*
 import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.*
 
 interface ApiClient {
@@ -164,11 +161,16 @@ interface ApiClient {
         @Path("noPemesanan") noPemesanan: String
     ): Call<Pengadaan>
 
+    ////////////////////////////////////////////////////////////////////////////
     //Transaksi Sparepart
-    @GET("transaksisparepart")
-    fun getTransSparepart(): Call<List<TransaksiSparepart>>
+    @FormUrlEncoded
+    @POST("historytransaksi")
+    fun getHistoryTrans(
+        @Field("platNomorKendaraan") platNomorKendaraan: String,
+        @Field("noTelpKonsumen") noTelpKonsumen: String
+    ): Call<List<Transaksi>>
 
-    @GET("transaksisparepart/{kodeNota}")
+    @GET("historytransaksi/{kodeNota}")
     fun getDetilTransSparepart(
         @Path("kodeNota") kodeNota: String
     ): Call<List<DetilTransaksiSparepart>>

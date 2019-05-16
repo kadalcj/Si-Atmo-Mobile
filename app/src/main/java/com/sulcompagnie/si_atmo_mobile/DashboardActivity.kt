@@ -1,20 +1,17 @@
 package com.sulcompagnie.si_atmo_mobile
 
 import android.content.Intent
-import android.graphics.Color
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Button
-import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import com.sulcompagnie.si_atmo_mobile.Api.RetrofitClient
-import com.sulcompagnie.si_atmo_mobile.CRUD.DashPencarianTransaksiSparepartActivity
+import com.sulcompagnie.si_atmo_mobile.CRUD.HistoryTransaksiActivity
 import com.sulcompagnie.si_atmo_mobile.DAO.Sparepart
 import kotlinx.android.synthetic.main.activity_dashboard.*
 import retrofit2.Call
@@ -43,7 +40,7 @@ class DashboardActivity : AppCompatActivity() {
         }
 
         btnDashTransaksi.setOnClickListener {
-            startActivity(Intent(this@DashboardActivity, DashPencarianTransaksiSparepartActivity::class.java))
+            startActivity(Intent(this@DashboardActivity, HistoryTransaksiActivity::class.java))
         }
 
         pushNotif()
