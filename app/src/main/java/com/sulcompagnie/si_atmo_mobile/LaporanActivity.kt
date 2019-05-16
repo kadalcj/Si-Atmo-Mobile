@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.sulcompagnie.si_atmo_mobile.CRUD.PendapatanBulananActivity
+import com.sulcompagnie.si_atmo_mobile.CRUD.PendapatanTahunanCabangActivity
 import kotlinx.android.synthetic.main.activity_laporan.*
 
 class LaporanActivity : AppCompatActivity() {
@@ -17,7 +18,7 @@ class LaporanActivity : AppCompatActivity() {
         }
 
         btnPendapatanTahunan.setOnClickListener {
-//            startActivity(Intent(this@LaporanActivity, ))
+            startActivity(Intent(this@LaporanActivity, PendapatanTahunanCabangActivity::class.java))
 
         }
 

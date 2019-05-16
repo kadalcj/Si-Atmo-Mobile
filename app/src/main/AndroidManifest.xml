@@ -13,7 +13,11 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
+        <activity android:name=".CRUD.PendapatanTahunanCabangActivity">
+        </activity>
         <activity android:name=".CRUD.WebViewLaporanPendapatanBulananActivity">
+        </activity>
+        <activity android:name=".CRUD.WebViewLaporanPendapatanTahunanCabangActivity">
         </activity>
         <activity android:name=".CRUD.PendapatanBulananActivity">
         </activity>

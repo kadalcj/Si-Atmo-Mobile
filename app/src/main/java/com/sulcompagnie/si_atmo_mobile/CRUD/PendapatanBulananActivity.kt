@@ -14,10 +14,16 @@ class PendapatanBulananActivity : AppCompatActivity() {
 
         btnLaporan.setOnClickListener {
             val tahun = editTahun.text.toString().trim()
-            val intent = Intent(this@PendapatanBulananActivity, WebViewLaporanPendapatanBulananActivity::class.java)
+            if(tahun.isEmpty()) {
+                editTahun.error = "Kode Sparepart Tidak Boleh Kosong"
+                return@setOnClickListener
+            }
+            else {
+                val intent = Intent(this@PendapatanBulananActivity, WebViewLaporanPendapatanBulananActivity::class.java)
 
-            intent.putExtra("tahun", tahun)
-            startActivity(intent)
+                intent.putExtra("tahun", tahun)
+                startActivity(intent)
+            }
         }
     }
 }
