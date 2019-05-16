@@ -1,10 +1,5 @@
 package com.sulcompagnie.si_atmo_mobile
 
-import android.app.Notification
-import android.app.NotificationChannel
-import android.app.NotificationManager
-import android.content.ContentProvider
-import android.content.Context
 import android.content.Intent
 import android.graphics.Color
 import android.os.Build
@@ -26,12 +21,6 @@ import retrofit2.Call
 import retrofit2.Response
 
 class DashboardActivity : AppCompatActivity() {
-//    lateinit var notificationManager: NotificationManager
-//    lateinit var notificationChannel: NotificationChannel
-//    lateinit var builder: Notification.Builder
-//    private  val channelId = "com.sulcompagnie.si_atmo_mobile"
-//    private val description = "Stok Sparepart Notification"
-
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -83,18 +72,6 @@ class DashboardActivity : AppCompatActivity() {
                         // notificationId is a unique int for each notification that you must define
                         notify(1234, builder.build())
                     }
-
-//                      notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-//
-//                      notificationChannel = NotificationChannel(channelId, description, NotificationManager.IMPORTANCE_HIGH)
-//                      notificationChannel.enableLights(true)
-//                      notificationChannel.enableVibration(true)
-//                      notificationChannel.lightColor = Color.GREEN
-//                      notificationManager.createNotificationChannel(notificationChannel)
-//
-//                      builder = Notification.Builder(this@DashboardActivity, channelId)
-//                          .setContentTitle("SiAtmo Mobile")
-//                          .setContentText("Beberapa Sparepart yang ada digudang melewati batas stok minumum, silahkan lakukan pengecekan untuk lebih detil.")
                 }
                 else {
                     Log.d("NOTIFICATION", "Kok Bisa?")

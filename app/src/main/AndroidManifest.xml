@@ -13,6 +13,10 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
+        <activity android:name=".CRUD.WebViewLaporanPendapatanBulananActivity">
+        </activity>
+        <activity android:name=".CRUD.PendapatanBulananActivity">
+        </activity>
         <activity android:name=".LaporanActivity">
         </activity>
         <activity

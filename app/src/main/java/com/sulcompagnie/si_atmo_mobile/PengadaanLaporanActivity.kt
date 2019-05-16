@@ -16,6 +16,6 @@ class PengadaanLaporanActivity : AppCompatActivity() {
         val BASEURL = RetrofitClient.BASE_URL
         val noPemesanan = intent.getStringExtra("noPemesanan")
 
-        webview.loadUrl(BASEURL + noPemesanan)
+        webview.loadUrl(BASEURL + "pemesanan/printPreview/" + noPemesanan)
     }
 }
