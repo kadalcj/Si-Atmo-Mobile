@@ -11,7 +11,6 @@ import androidx.annotation.RequiresApi
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import com.sulcompagnie.si_atmo_mobile.Api.RetrofitClient
-import com.sulcompagnie.si_atmo_mobile.CRUD.HistoryTransaksiActivity
 import com.sulcompagnie.si_atmo_mobile.DAO.Sparepart
 import kotlinx.android.synthetic.main.activity_dashboard.*
 import retrofit2.Call

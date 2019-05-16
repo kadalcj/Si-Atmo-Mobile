@@ -13,28 +13,37 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
-        <activity android:name=".CRUD.HistoryTransaksiActivity">
+        <activity android:name=".CRUD.PengeluaranBulananActivity"
+            android:label="Pengeluaran Bulanan">
         </activity>
-        <activity android:name=".CRUD.PendapatanTahunanCabangActivity">
+        <activity android:name=".HistoryTransaksiActivity"
+            android:label="History Transaksi">
         </activity>
-        <activity android:name=".CRUD.WebViewLaporanPendapatanBulananActivity">
+        <activity android:name=".CRUD.PendapatanTahunanCabangActivity"
+            android:label="Pendapatan Tahunan Cabang">
         </activity>
-        <activity android:name=".CRUD.WebViewLaporanPendapatanTahunanCabangActivity">
+        <activity android:name=".CRUD.WebViewLaporanPendapatanBulananActivity"
+            android:label="Pendapatan Bulanan">
         </activity>
-        <activity android:name=".CRUD.PendapatanBulananActivity">
+        <activity android:name=".CRUD.WebViewLaporanPendapatanTahunanCabangActivity"
+            android:label="Laporan Pendapatan Tahunan">
         </activity>
-        <activity android:name=".LaporanActivity">
+        <activity android:name=".CRUD.WebViewLaporanPengeluaranBulananActivity"
+            android:label="Laporan Pengeluaran Bulanan">
+        </activity>
+        <activity android:name=".CRUD.WebViewLaporanStokTerlarisActivity"
+            android:label="Laporan Stok Terlaris">
+        </activity>
+        <activity android:name=".CRUD.PendapatanBulananActivity"
+            android:label="Pendapatan Bulanan">
+        </activity>
+        <activity android:name=".LaporanActivity"
+            android:label="Dashboard Laporan">
         </activity>
         <activity
                 android:name=".CRUD.DetilTransaksiSparepartActivity"
                 android:label="Detil History Transaksi"
                 android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity
-                android:name=".CRUD.DashPencarianTransaksiSparepartActivity"
-                android:label="History Transaksi">
-        </activity>
-        <activity android:name=".PencarianTransaksiActivity">
         </activity>
         <activity android:name=".CRUD.UpdateStatusPengadaanActivity">
         </activity>

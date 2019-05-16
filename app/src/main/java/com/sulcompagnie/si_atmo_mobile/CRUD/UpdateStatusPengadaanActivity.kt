@@ -46,17 +46,23 @@ class UpdateStatusPengadaanActivity : AppCompatActivity() {
         textTanggalPemesanan.text = tanggalPemesanan
 
         btnUpdate.setOnClickListener {
-            RetrofitClient.instance.updateStatus(noPemesanan, spinner.selectedItem.toString().trim()).enqueue(object : Callback<Pengadaan> {
-                override fun onFailure(call: Call<Pengadaan>, t: Throwable) {
+            if(statusPemesanan == "Arrived") {
 
-                }
+                Toast.makeText(applicationContext, "Status Pemesanan Tidak Bisa Diubah Karena Sudah Sampai.", Toast.LENGTH_SHORT).show()
+            }
+            else {
+                RetrofitClient.instance.updateStatus(noPemesanan, spinner.selectedItem.toString().trim()).enqueue(object : Callback<Pengadaan> {
+                    override fun onFailure(call: Call<Pengadaan>, t: Throwable) {
 
-                override fun onResponse(call: Call<Pengadaan>, response: Response<Pengadaan>) {
-                    startActivity(Intent(this@UpdateStatusPengadaanActivity, PengadaanActivity::class.java))
-                    finish()
-                    Toast.makeText(applicationContext, "Berhasil Update Status", Toast.LENGTH_SHORT).show()
-                }
-            })
+                    }
+
+                    override fun onResponse(call: Call<Pengadaan>, response: Response<Pengadaan>) {
+                        startActivity(Intent(this@UpdateStatusPengadaanActivity, PengadaanActivity::class.java))
+                        finish()
+                        Toast.makeText(applicationContext, "Berhasil Update Status", Toast.LENGTH_SHORT).show()
+                    }
+                })
+            }
         }
     }
 }

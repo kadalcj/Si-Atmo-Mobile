@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.sulcompagnie.si_atmo_mobile.CRUD.PendapatanBulananActivity
 import com.sulcompagnie.si_atmo_mobile.CRUD.PendapatanTahunanCabangActivity
+import com.sulcompagnie.si_atmo_mobile.CRUD.PengeluaranBulananActivity
+import com.sulcompagnie.si_atmo_mobile.CRUD.WebViewLaporanStokTerlarisActivity
 import kotlinx.android.synthetic.main.activity_laporan.*
 
 class LaporanActivity : AppCompatActivity() {
@@ -23,12 +25,12 @@ class LaporanActivity : AppCompatActivity() {
         }
 
         btnPengeluaranBulanan.setOnClickListener {
-//            startActivity(Intent(this@LaporanActivity, ))
+            startActivity(Intent(this@LaporanActivity, PengeluaranBulananActivity::class.java))
 
         }
 
         btnStokTerlaris.setOnClickListener {
-//            startActivity(Intent(this@LaporanActivity, ))
+            startActivity(Intent(this@LaporanActivity, WebViewLaporanStokTerlarisActivity::class.java))
 
         }
 

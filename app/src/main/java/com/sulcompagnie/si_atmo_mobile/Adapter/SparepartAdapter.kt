@@ -25,15 +25,6 @@ class SparepartAdapter(val sparepart: List<Sparepart>) : RecyclerView.Adapter<Sp
     override fun onBindViewHolder(holder: SparepartViewHolder, position: Int) {
         val sparepart = sparepart[position]
 
-//        holder.view.kodeSparepart.text = "Kode Sparepart\t\t:\t" + sparepart.kodeSparepart
-//        holder.view.namaSparepart.text = "Nama Sparepart\t\t:\t" + sparepart.namaSparepart
-//        holder.view.tipeSparepart.text = "Tipe Sparepart\t\t:\t" + sparepart.tipeSparepart
-//        holder.view.merkSparepart.text = "Merk Sparepart\t\t:\t" + sparepart.merkSparepart
-//        holder.view.hargaBeli.text = "Harga Beli\t\t:\t" + sparepart.hargaBeli
-//        holder.view.hargaJual.text = "Harga Jual\t\t:\t" + sparepart.hargaJual
-//        holder.view.tempatPeletakan.text = "Tempat Peletakan\t\t:\t" + sparepart.tempatPeletakan
-//        holder.view.jumlahStok.text = "Jumlah Stok\t\t:\t" + sparepart.jumlahStok
-
         holder.view.kodeSparepart.text = sparepart.kodeSparepart
         holder.view.namaSparepart.text = sparepart.namaSparepart
         holder.view.tipeSparepart.text = sparepart.tipeSparepart

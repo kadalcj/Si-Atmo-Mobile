@@ -1,5 +1,6 @@
 package com.sulcompagnie.si_atmo_mobile.Adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -37,7 +38,20 @@ class HistoryAdapter(val history: List<Transaksi>) : RecyclerView.Adapter<Histor
     class HistoryViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         init {
             view.setOnClickListener {
+                val kodeNota = view.textKodeNota.text.trim()
+                val tanggalTransaksi = view.textTanggalTransaksi.text.trim()
+                val platNomor = view.textPlatNomor.text.trim()
+                val tanggalLunas = view.textTanggalLunas.text.trim()
+                val subTotal = view.textSubTotal.text.trim()
+                val diskon = view.textDiskon.text.trim()
+                val total = view.textTotal.text.trim()
+                val statusTransaksi = view.textStatusTransaksi.text.trim()
+                val noTelp = view.textNoTelp.text.trim()
+                val alamatKonsumen = view.textAlamatKonsumen.text.trim()
 
+//                val intent = Intent(view.context, )
+
+//                view.context.startActivity()
             }
         }
     }
