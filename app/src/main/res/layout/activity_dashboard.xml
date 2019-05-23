@@ -17,7 +17,7 @@
             android:textColor="@color/text"
             android:textSize="25dp"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="19dp" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/btnDashSupplier" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="9dp" android:layout_marginEnd="9dp"/>
@@ -29,7 +29,7 @@
             android:text="SUPLIER"
             android:textColor="@color/text"
             android:textSize="25dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnDashSparepart" android:layout_marginBottom="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnDashSparepart" android:layout_marginBottom="12dp"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/btnDashPengadaan"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="9dp" android:layout_marginEnd="9dp"/>
@@ -53,7 +53,7 @@
             android:text="LAPORAN"
             android:textColor="@color/text"
             android:textSize="25dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnDashPengadaan" android:layout_marginBottom="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnDashPengadaan" android:layout_marginBottom="11dp"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/btnDashTransaksi"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="9dp" android:layout_marginEnd="9dp"/>
@@ -65,7 +65,19 @@
             android:text="History Transaksi"
             android:textColor="@color/text"
             android:textSize="25dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnDashLaporan" android:layout_marginBottom="181dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnDashLaporan" android:layout_marginBottom="11dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/btnDashSurat"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="9dp" android:layout_marginEnd="9dp"/>
+    <Button
+            android:id="@+id/btnDashSurat"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/highlight"
+            android:text="Surat Menyurat"
+            android:textColor="@color/text"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnDashTransaksi" android:layout_marginBottom="67dp"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginStart="9dp" android:layout_marginEnd="9dp"/>

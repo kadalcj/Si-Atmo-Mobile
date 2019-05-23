@@ -42,6 +42,10 @@ class DashboardActivity : AppCompatActivity() {
             startActivity(Intent(this@DashboardActivity, HistoryTransaksiActivity::class.java))
         }
 
+        btnDashSurat.setOnClickListener {
+            startActivity(Intent(this, SuratActivity::class.java))
+        }
+
         pushNotif()
     }
 

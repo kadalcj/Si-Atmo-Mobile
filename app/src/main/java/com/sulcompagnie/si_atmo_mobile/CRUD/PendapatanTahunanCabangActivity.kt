@@ -14,15 +14,11 @@ class PendapatanTahunanCabangActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pendapatan_tahunan_cabang)
 
-        val spinner = findViewById<Spinner>(R.id.spinnerCabang)
-        val namaCabang = arrayOf("Babarsari", "Demangan", "Kaliurang")
-        spinner.adapter = ArrayAdapter<String>(this@PendapatanTahunanCabangActivity, android.R.layout.simple_spinner_dropdown_item, namaCabang)
-
         btnLaporan.setOnClickListener {
             val intent = Intent(this@PendapatanTahunanCabangActivity, WebViewLaporanPendapatanTahunanCabangActivity::class.java)
-            val cabang = spinner.selectedItem.toString().trim()
+            val tahun =  editTahun.text.toString()
 
-            intent.putExtra("cabang", cabang)
+            intent.putExtra("tahun", tahun)
             startActivity(intent)
         }
     }

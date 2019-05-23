@@ -13,32 +13,63 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
-        <activity android:name=".CRUD.PengeluaranBulananActivity"
-            android:label="Pengeluaran Bulanan">
+        <activity android:name=".CRUD.NotaLunasActivity">
         </activity>
-        <activity android:name=".HistoryTransaksiActivity"
-            android:label="History Transaksi">
+        <activity android:name=".CRUD.SuratPerintahKerjaActivity">
         </activity>
-        <activity android:name=".CRUD.PendapatanTahunanCabangActivity"
-            android:label="Pendapatan Tahunan Cabang">
+        <activity android:name=".SuratActivity">
         </activity>
-        <activity android:name=".CRUD.WebViewLaporanPendapatanBulananActivity"
-            android:label="Pendapatan Bulanan">
+        <activity android:name=".CRUD.SisaStokBulananActivity">
         </activity>
-        <activity android:name=".CRUD.WebViewLaporanPendapatanTahunanCabangActivity"
-            android:label="Laporan Pendapatan Tahunan">
+        <activity android:name=".CRUD.SparepartTerlarisActivity">
         </activity>
-        <activity android:name=".CRUD.WebViewLaporanPengeluaranBulananActivity"
-            android:label="Laporan Pengeluaran Bulanan">
+        <activity
+                android:name=".CRUD.PengeluaranBulananActivity"
+                android:label="Pengeluaran Bulanan">
         </activity>
-        <activity android:name=".CRUD.WebViewLaporanStokTerlarisActivity"
-            android:label="Laporan Stok Terlaris">
+        <activity
+                android:name=".HistoryTransaksiActivity"
+                android:label="History Transaksi">
         </activity>
-        <activity android:name=".CRUD.PendapatanBulananActivity"
-            android:label="Pendapatan Bulanan">
+        <activity
+                android:name=".CRUD.PendapatanTahunanCabangActivity"
+                android:label="Pendapatan Tahunan Cabang">
         </activity>
-        <activity android:name=".LaporanActivity"
-            android:label="Dashboard Laporan">
+        <activity
+                android:name=".CRUD.WebViewLaporanPendapatanBulananActivity"
+                android:label="Pendapatan Bulanan">
+        </activity>
+        <activity
+                android:name=".CRUD.WebViewLaporanPendapatanTahunanCabangActivity"
+                android:label="Laporan Pendapatan Tahunan">
+        </activity>
+        <activity
+                android:name=".CRUD.WebViewLaporanPengeluaranBulananActivity"
+                android:label="Laporan Pengeluaran Bulanan">
+        </activity>
+        <activity
+                android:name=".CRUD.WebViewLaporanSparepartTerlarisActivity"
+                android:label="Laporan Stok Terlaris">
+        </activity>
+        <activity
+                android:name=".CRUD.WebViewLaporanSisaStokActivity"
+                android:label="Laporan Sisa Stok Bulanan">
+        </activity>
+        <activity
+                android:name=".CRUD.WebViewLaporanServiceTerlarisActivity"
+                android:label="Laporan Service Terlaris">
+        </activity>
+        <activity
+                android:name=".CRUD.WebViewSuratPerintahKerjaActivity"
+                android:label="Surat Perintah Kerja">
+        </activity>
+        <activity
+                android:name=".CRUD.PendapatanBulananActivity"
+                android:label="Pendapatan Bulanan">
+        </activity>
+        <activity
+                android:name=".LaporanActivity"
+                android:label="Dashboard Laporan">
         </activity>
         <activity
                 android:name=".CRUD.DetilTransaksiSparepartActivity"

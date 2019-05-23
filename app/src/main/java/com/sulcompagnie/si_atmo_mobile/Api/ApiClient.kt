@@ -1,5 +1,6 @@
 package com.sulcompagnie.si_atmo_mobile.Api
 
+import android.widget.Spinner
 import com.sulcompagnie.si_atmo_mobile.DAO.*
 import retrofit2.Call
 import retrofit2.http.*
@@ -70,6 +71,10 @@ interface ApiClient {
     fun deleteSparepart(
         @Path("kodeSparepart") kodeSparepart: String
     ): Call<Sparepart>
+
+    //Spinner Tipe
+    @GET("sparepart/tipesparepart")
+    fun getSpinnerTipe(): Call<List<SpinnerSparepart>>
 
     ////////////////////////////////////////////////////////////////////////////
 
@@ -174,4 +179,9 @@ interface ApiClient {
     fun getDetilTransSparepart(
         @Path("kodeNota") kodeNota: String
     ): Call<List<DetilTransaksiSparepart>>
+
+    ////////////////////////////////////////////////////////////////////////////
+    //Surat
+    @GET("kodenota/")
+    fun getKodeNota(): Call<List<Transaksi>>
 }

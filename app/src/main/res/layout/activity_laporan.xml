@@ -16,11 +16,11 @@
             android:text="Pendapatan Bulanan"
             android:textColor="@color/text"
             android:textSize="25dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/btnPendapatanTahunan" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+            android:layout_marginTop="8dp" android:layout_marginBottom="13dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/btnPendapatanTahunan"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginEnd="8dp"
+    />
     <Button
             android:id="@+id/btnPendapatanTahunan"
             android:layout_width="0dp"
@@ -29,7 +29,7 @@
             android:text="Pendapatan Tahunan"
             android:textColor="@color/text"
             android:textSize="25dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnPendapatanBulanan" android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnPendapatanBulanan" android:layout_marginBottom="14dp"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/btnPengeluaranBulanan"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
@@ -41,7 +41,7 @@
             android:text="Pengeluaran Bulanan"
             android:textColor="@color/text"
             android:textSize="25dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnPendapatanTahunan" android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnPendapatanTahunan" android:layout_marginBottom="14dp"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/btnStokTerlaris"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
@@ -50,11 +50,11 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@color/highlight"
-            android:text="Stok Terlaris"
+            android:text="Sparepart Terlaris"
             android:textColor="@color/text"
             android:textSize="25dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnPengeluaranBulanan" android:layout_marginBottom="8dp"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/btnSisaStok"
+            app:layout_constraintTop_toBottomOf="@+id/btnPengeluaranBulanan" android:layout_marginBottom="14dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/btnJumlahService"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
     <Button
@@ -62,24 +62,24 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@color/highlight"
-            android:text="Sisa Stok Bulanan"
+            android:text="Jumlah Service Kendaraan"
             android:textColor="@color/text"
             android:textSize="25dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnSisaStok" android:layout_marginBottom="125dp"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnStokTerlaris" android:layout_marginBottom="14dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/btnSisaStok"
+            app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
     <Button
             android:id="@+id/btnSisaStok"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@color/highlight"
-            android:text="Jumlah Service Kendaraan"
+            android:text="Sisa Stok Bulanan"
             android:textColor="@color/text"
             android:textSize="25dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnStokTerlaris" android:layout_marginBottom="8dp"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/btnJumlahService"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnJumlahService" android:layout_marginBottom="96dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
 
 

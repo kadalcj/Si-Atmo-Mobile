@@ -3,10 +3,7 @@ package com.sulcompagnie.si_atmo_mobile
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.sulcompagnie.si_atmo_mobile.CRUD.PendapatanBulananActivity
-import com.sulcompagnie.si_atmo_mobile.CRUD.PendapatanTahunanCabangActivity
-import com.sulcompagnie.si_atmo_mobile.CRUD.PengeluaranBulananActivity
-import com.sulcompagnie.si_atmo_mobile.CRUD.WebViewLaporanStokTerlarisActivity
+import com.sulcompagnie.si_atmo_mobile.CRUD.*
 import kotlinx.android.synthetic.main.activity_laporan.*
 
 class LaporanActivity : AppCompatActivity() {
@@ -30,17 +27,17 @@ class LaporanActivity : AppCompatActivity() {
         }
 
         btnStokTerlaris.setOnClickListener {
-            startActivity(Intent(this@LaporanActivity, WebViewLaporanStokTerlarisActivity::class.java))
+            startActivity(Intent(this@LaporanActivity, SparepartTerlarisActivity::class.java))
 
         }
 
         btnJumlahService.setOnClickListener {
-//            startActivity(Intent(this@LaporanActivity, ))
+            startActivity(Intent(this@LaporanActivity, WebViewLaporanServiceTerlarisActivity::class.java))
 
         }
 
         btnSisaStok.setOnClickListener {
-//            startActivity(Intent(this@LaporanActivity, ))
+            startActivity(Intent(this@LaporanActivity, SisaStokBulananActivity::class.java))
         }
     }
 }

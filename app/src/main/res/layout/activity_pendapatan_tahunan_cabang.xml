@@ -8,13 +8,16 @@
         tools:context=".CRUD.PendapatanTahunanCabangActivity"
         android:background="@color/background">
 
-    <Spinner
-            android:outlineAmbientShadowColor="@color/text2"
-            android:outlineSpotShadowColor="@color/text2"
+    <EditText
+            android:textColor="@color/text2"
             android:layout_width="0dp"
+            android:textColorHint="@color/text2"
+            android:hint="Tahun"
             android:layout_height="wrap_content"
-            android:id="@+id/spinnerCabang"
-            android:layout_marginTop="55dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTahun"
+            android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
@@ -25,6 +28,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnLaporan"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="22dp"
-            app:layout_constraintTop_toBottomOf="@+id/spinnerCabang" app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/editTahun" app:layout_constraintEnd_toEndOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
