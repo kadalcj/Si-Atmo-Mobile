@@ -37,12 +37,11 @@ class SisaStokBulananActivity : AppCompatActivity() {
             override fun onResponse(call: Call<List<SpinnerSparepart>>, response: Response<List<SpinnerSparepart>>) {
                 val spinnerIsi = response.body()
 
-                val size: Int? = response.body()?.size
-                Log.d("Size", size.toString())
+                val size = response.body()?.lastIndex
 
                 val spinner: ArrayList<String> = ArrayList()
 
-                for (i in 0..5) {
+                for (i in 0..size!!) {
                     spinner.add(spinnerIsi?.get(i)?.tipeSparepart.toString().trim())
                 }
 

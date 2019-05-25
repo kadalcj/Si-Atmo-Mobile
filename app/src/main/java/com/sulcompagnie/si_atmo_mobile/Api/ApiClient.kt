@@ -72,6 +72,10 @@ interface ApiClient {
         @Path("kodeSparepart") kodeSparepart: String
     ): Call<Sparepart>
 
+    //Spinner Kode
+    @GET("sparepart/kodesparepart")
+    fun getSpinnerKode(): Call<List<Sparepart>>
+
     //Spinner Tipe
     @GET("sparepart/tipesparepart")
     fun getSpinnerTipe(): Call<List<SpinnerSparepart>>
@@ -184,4 +188,7 @@ interface ApiClient {
     //Surat
     @GET("kodenota/")
     fun getKodeNota(): Call<List<Transaksi>>
+
+    @GET("kodenotafull/")
+    fun getKodeNotaFull(): Call<List<Transaksi>>
 }

@@ -3,6 +3,7 @@ package com.sulcompagnie.si_atmo_mobile
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.sulcompagnie.si_atmo_mobile.CRUD.NotaLunasActivity
 import com.sulcompagnie.si_atmo_mobile.CRUD.SuratPerintahKerjaActivity
 import kotlinx.android.synthetic.main.activity_surat.*
 
@@ -17,7 +18,7 @@ class SuratActivity : AppCompatActivity() {
         }
 
         btnNotaLu.setOnClickListener {
-
+            startActivity(Intent(this, NotaLunasActivity::class.java))
         }
     }
 }

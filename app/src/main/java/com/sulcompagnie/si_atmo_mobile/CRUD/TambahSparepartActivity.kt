@@ -45,7 +45,7 @@ class TambahSparepartActivity : AppCompatActivity() {
         }
 
         btnTambah.setOnClickListener {
-            val kodeSparepart = spinKode1.selectedItem.toString().trim() + "-" + spinKode2.selectedItem.toString().trim() + "-" + editNomor.text.toString().trim()
+            val kodeSparepart = spinKode1.selectedItem.toString().trim() + "-" + spinKode2.selectedItem.toString().trim()
             val namaSparepart = editNamaSparepart.text.toString().trim()
             val tipeSparepart = editTipeSparepart.text.toString().trim()
             val merkSparepart = editMerkSparepart.text.toString().trim()
@@ -54,10 +54,10 @@ class TambahSparepartActivity : AppCompatActivity() {
             val tempatPeletakan = spinKode1.selectedItem.toString().trim()
             val jumlahStok = 0
 
-            if(kodeSparepart.isEmpty()){
-                editNomor.error = "Kode Sparepart Tidak Boleh Kosong"
-                return@setOnClickListener
-            }
+//            if(kodeSparepart.isEmpty()){
+//                editNomor.error = "Kode Sparepart Tidak Boleh Kosong"
+//                return@setOnClickListener
+//            }
             if(namaSparepart.isEmpty()){
                 editNamaSparepart.error = "Nama Sparepart Tidak Boleh Kosong"
                 return@setOnClickListener
@@ -89,9 +89,14 @@ class TambahSparepartActivity : AppCompatActivity() {
                     }
 
                     override fun onResponse(call: Call<Sparepart>, response: Response<Sparepart>) {
-                        startActivity(Intent(this@TambahSparepartActivity, SparepartActivity::class.java))
-                        finish()
-                        Toast.makeText(applicationContext, "Berhasil Tambah Supplier", Toast.LENGTH_SHORT).show()
+                        if(response.isSuccessful) {
+                            startActivity(Intent(this@TambahSparepartActivity, SparepartActivity::class.java))
+                            finish()
+                            Toast.makeText(applicationContext, "Berhasil Tambah Supplier", Toast.LENGTH_SHORT).show()
+                        }
+                        else {
+                            Toast.makeText(applicationContext, "Ra Mlebu Tjuk", Toast.LENGTH_SHORT).show()
+                        }
                     }
                 })
         }

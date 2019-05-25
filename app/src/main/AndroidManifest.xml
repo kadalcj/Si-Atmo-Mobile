@@ -64,6 +64,10 @@
                 android:label="Surat Perintah Kerja">
         </activity>
         <activity
+                android:name=".CRUD.WebViewNotaLunasActivity"
+                android:label="Nota Lunas">
+        </activity>
+        <activity
                 android:name=".CRUD.PendapatanBulananActivity"
                 android:label="Pendapatan Bulanan">
         </activity>

@@ -32,18 +32,21 @@ class DetilTransaksiSparepartActivity : AppCompatActivity() {
         val statusTransaksi = inten.getStringExtra("statusTransaksi")
         val namaKonsumen = inten.getStringExtra("namaKonsumen")
         val noTelp = inten.getStringExtra("noTelp")
-        val alamat = inten.getStringExtra("alamat")
+        val alamat = inten.getStringExtra("alamatKonsumen")
 
         textKodeNota.text = kodeNota
-        textTanggalTransaksi.text = tanggalTransaksi
-        textTanggalLunas.text = tanggalLunas
-        textSubTotal.text = subTotal
-        textDiskon.text = diskon
-        textTota.text = total
-        textStatusTransaksi.text = statusTransaksi
-        textNamaKonsumen.text = namaKonsumen
-        textNoTelp.text = noTelp
-        textAlamatKonsumen.text = alamat
+        textTanggalTransaksi.text = "Tanggal Transaksi: " + tanggalTransaksi
+        if(tanggalLunas === "")
+            textTanggalLunas.text = "Tanggal Lunas: " + tanggalLunas
+        else
+            textTanggalLunas.text = "Tanggal Lunas: Belum Lunas"
+        textSubTotal.text = "SubTotal: " + subTotal
+        textDiskon.text = "Diskon: " + diskon
+        textTota.text = "Total: " + total
+        textStatusTransaksi.text = "Status Transaksi: " + statusTransaksi
+        textNamaKonsumen.text = "Nama Konsumen: " + namaKonsumen
+        textNoTelp.text = "No. Telp :" + noTelp
+        textAlamatKonsumen.text = "Alamat: " + alamat
 
         refreshLayout.setOnRefreshListener {
             fetchDetil(kodeNota)
