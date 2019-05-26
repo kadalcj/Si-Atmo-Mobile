@@ -52,7 +52,7 @@
     <Button
             android:textColor="@color/text2"
             android:backgroundTint="@color/background"
-            android:text="Button"
+            android:text="Update"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnUpdate" app:layout_constraintStart_toStartOf="parent"

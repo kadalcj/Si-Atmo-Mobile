@@ -13,6 +13,7 @@ import com.sulcompagnie.si_atmo_mobile.DAO.Pengadaan
 import com.sulcompagnie.si_atmo_mobile.PengadaanActivity
 import com.sulcompagnie.si_atmo_mobile.R
 import kotlinx.android.synthetic.main.activity_detil_pengadaan.*
+import kotlinx.android.synthetic.main.activity_edit_sparepart.*
 import kotlinx.android.synthetic.main.content_pengadaan.refreshLayout
 import retrofit2.Call
 import retrofit2.Callback
@@ -70,10 +71,15 @@ class DetilPengadaanActivity : AppCompatActivity() {
         }
 
         btnTambah.setOnClickListener {
-            val intent = Intent(this@DetilPengadaanActivity, TambahDetilPengadaanActivity::class.java)
+            if(textStatusPemesanan.text.toString().trim() == "On Process") {
+                val intent = Intent(this@DetilPengadaanActivity, TambahDetilPengadaanActivity::class.java)
 
-            intent.putExtra("noPemesanan", noPemesanan)
-            startActivity(intent)
+                intent.putExtra("noPemesanan", noPemesanan)
+                startActivity(intent)
+            }
+            else {
+                Toast.makeText(applicationContext, "Tambah Pesanan Gagal. Status Pesanan Sedang Dalam Pengiriman Atau Sudah Sampai.", Toast.LENGTH_SHORT).show()
+            }
         }
 
         btnHapus.setOnClickListener {
@@ -121,7 +127,7 @@ class DetilPengadaanActivity : AppCompatActivity() {
                     finish()
                 }
                 else
-                    Toast.makeText(applicationContext, "Delete Gagal", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(applicationContext, "Delete Gagal. Status Pesanan Sedang Dalam Pengiriman Atau Sudah Sampai.", Toast.LENGTH_SHORT).show()
             }
         })
     }

@@ -8,6 +8,7 @@ import android.widget.Spinner
 import android.widget.Toast
 import com.sulcompagnie.si_atmo_mobile.Api.RetrofitClient
 import com.sulcompagnie.si_atmo_mobile.DAO.Pengadaan
+import com.sulcompagnie.si_atmo_mobile.DAO.Sparepart
 import com.sulcompagnie.si_atmo_mobile.PengadaanActivity
 import com.sulcompagnie.si_atmo_mobile.R
 import com.sulcompagnie.si_atmo_mobile.SparepartActivity
@@ -23,25 +24,43 @@ class TambahDetilPengadaanActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tambah_detil_pengadaan)
 
+        val spinnerKode = findViewById<Spinner>(R.id.spinnerKode)
+
+        RetrofitClient.instance.getSpinnerKode().enqueue(object : Callback<List<Sparepart>> {
+            override fun onFailure(call: Call<List<Sparepart>>, t: Throwable) {
+                //Nothing To Do
+            }
+
+            override fun onResponse(call: Call<List<Sparepart>>, response: Response<List<Sparepart>>) {
+                val kodeSparepart =  response.body()
+
+                val spinner: ArrayList<String> = ArrayList()
+
+                val size = response.body()?.lastIndex
+
+                for(i in 0..size!!) {
+                    spinner.add(kodeSparepart?.get(i)?.kodeSparepart.toString().trim())
+                }
+
+                spinnerKode.adapter = ArrayAdapter<String>(this@TambahDetilPengadaanActivity, android.R.layout.simple_spinner_dropdown_item, spinner)
+            }
+        })
+
         val intent = intent
 
-        val spinSatuan = findViewById<Spinner>(R.id.spinSatuan)
+        val spinSatuan = findViewById<Spinner>(R.id.spinnerSatuan)
         val satuan = arrayOf("Buah", "Dus")
 
         spinSatuan.adapter = ArrayAdapter<String>(this@TambahDetilPengadaanActivity, android.R.layout.simple_spinner_dropdown_item, satuan)
 
         btnTambah.setOnClickListener {
             val noPemesanan = intent.getStringExtra("noPemesanan")
-            val kodeSparepart = editKodeSparepart.text.toString().trim()
+            val kodeSparepart = spinnerKode.selectedItem.toString().trim()
             val jumlahPengadaan = editJumlahPengadaan.text.toString().trim()
             val satuan = spinSatuan.selectedItem.toString().trim()
 
-            if(kodeSparepart.isEmpty()) {
-                editKodeSparepart.error = "Kode Sparepart Tidak Boleh Kosong"
-                return@setOnClickListener
-            }
             if(jumlahPengadaan.isEmpty()) {
-                editKodeSparepart.error = "Jumlah Pengadaan Tidak Boleh Kosong"
+                editJumlahPengadaan.error = "Jumlah Pengadaan Tidak Boleh Kosong"
                 return@setOnClickListener
             }
 

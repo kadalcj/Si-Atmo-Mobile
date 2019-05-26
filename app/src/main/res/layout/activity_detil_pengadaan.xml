@@ -15,26 +15,25 @@
             android:id="@+id/textNamaPerusahaan"
             android:textColor="@color/text2" android:textSize="24sp"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="16dp" android:layout_marginStart="16dp"
-            android:layout_marginBottom="10dp" app:layout_constraintBottom_toTopOf="@+id/textTanggalPemesanan"/>
+            android:layout_marginTop="16dp" android:layout_marginStart="16dp"/>
     <TextView
             android:text="Tanggal Pemesanan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textTanggalPemesanan"
             android:textColor="@color/text2" android:textSize="24sp"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="16dp" app:layout_constraintTop_toBottomOf="@+id/textNamaPerusahaan"
-            android:layout_marginBottom="13dp" app:layout_constraintBottom_toTopOf="@+id/textStatusPemesanan"/>
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textNamaPerusahaan"/>
     <TextView
             android:text="Status Pemesanan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textStatusPemesanan"
             android:textColor="@color/text2" android:textSize="24sp"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="16dp" app:layout_constraintTop_toBottomOf="@+id/textTanggalPemesanan"
-            android:layout_marginBottom="29dp" app:layout_constraintBottom_toTopOf="@+id/btnLaporan"/>
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="17dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textTanggalPemesanan"/>
 
     <Button
             android:layout_width="wrap_content"
@@ -44,9 +43,7 @@
             android:textColor="@color/text2"
             android:backgroundTint="@color/background"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="9dp" app:layout_constraintBaseline_toBaselineOf="@+id/btnUpdate"
-            app:layout_constraintEnd_toStartOf="@+id/btnUpdate" android:layout_marginEnd="1dp"
-    />
+            app:layout_constraintBaseline_toBaselineOf="@+id/btnUpdate" android:layout_marginStart="13dp"/>
 
     <Button
             android:layout_width="wrap_content"
@@ -55,9 +52,8 @@
             android:id="@+id/btnTambahDetil"
             android:textColor="@color/text2"
             android:backgroundTint="@color/background"
-            app:layout_constraintTop_toBottomOf="@+id/btnLaporan"
-            app:layout_constraintStart_toEndOf="@+id/btnUpdate" app:layout_constraintEnd_toStartOf="@+id/btnLaporan"
-            android:layout_marginBottom="28dp" app:layout_constraintBottom_toTopOf="@+id/refreshLayout"/>
+            android:layout_marginStart="10dp" app:layout_constraintStart_toEndOf="@+id/btnUpdate"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textStatusPemesanan"/>
 
     <Button
             android:textColor="@color/text2"
@@ -66,10 +62,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnLaporan"
-            app:layout_constraintTop_toBottomOf="@+id/textStatusPemesanan"
-            app:layout_constraintStart_toEndOf="@+id/btnTambahDetil" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/btnTambahDetil" android:layout_marginEnd="9dp"
-    />
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/btnTambahDetil"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btnTambahDetil"/>
 
     <Button
             android:textColor="@color/text2"
@@ -78,14 +73,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnUpdate"
-            app:layout_constraintTop_toTopOf="@+id/btnTambahDetil"
-            app:layout_constraintStart_toEndOf="@+id/btnHapus" app:layout_constraintEnd_toStartOf="@+id/btnTambahDetil"
-            android:layout_marginEnd="5dp"/>
+            android:layout_marginStart="10dp" app:layout_constraintStart_toEndOf="@+id/btnHapus"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textStatusPemesanan"/>
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:id="@+id/refreshLayout"
-            app:layout_constraintTop_toBottomOf="@+id/btnTambahDetil"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnHapus" android:layout_marginBottom="8dp"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent">
         <androidx.recyclerview.widget.RecyclerView
