@@ -13,15 +13,25 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
-        <activity android:name=".CRUD.NotaLunasActivity">
+        <activity
+                android:name=".CRUD.NotaLunasActivity"
+                android:label="Nota Lunas">
         </activity>
-        <activity android:name=".CRUD.SuratPerintahKerjaActivity">
+        <activity
+                android:name=".CRUD.SuratPerintahKerjaActivity"
+                android:label="Surat Perintah Kerja">
         </activity>
-        <activity android:name=".SuratActivity">
+        <activity
+                android:name=".SuratActivity"
+                android:label="Surat Menyurat">
         </activity>
-        <activity android:name=".CRUD.SisaStokBulananActivity">
+        <activity
+                android:name=".CRUD.SisaStokBulananActivity"
+                android:label="Sisa Stok Bulanan">
         </activity>
-        <activity android:name=".CRUD.SparepartTerlarisActivity">
+        <activity
+                android:name=".CRUD.SparepartTerlarisActivity"
+                android:label="Sparepart Terlaris">
         </activity>
         <activity
                 android:name=".CRUD.PengeluaranBulananActivity"
@@ -80,11 +90,17 @@
                 android:label="Detil History Transaksi"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".CRUD.UpdateStatusPengadaanActivity">
+        <activity
+                android:name=".CRUD.UpdateStatusPengadaanActivity"
+                android:label="Update Status Pengadaan">
         </activity>
-        <activity android:name=".CRUD.PengadaanLaporanActivity">
+        <activity
+                android:name=".CRUD.PengadaanLaporanActivity"
+                android:label="Laporan Pengadaan">
         </activity>
-        <activity android:name=".CRUD.TambahDetilPengadaanActivity">
+        <activity
+                android:name=".CRUD.TambahDetilPengadaanActivity"
+                android:label="Tambah Detil Pengadaan">
         </activity>
         <activity
                 android:name=".CRUD.DetilPengadaanActivity"
@@ -100,9 +116,13 @@
                 android:parentActivityName=".DashboardActivity"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".CRUD.EditSupplierActivity">
+        <activity
+                android:name=".CRUD.EditSupplierActivity"
+                android:label="Edit Supplier">
         </activity>
-        <activity android:name=".CRUD.TambahSupplierActivity">
+        <activity
+                android:name=".CRUD.TambahSupplierActivity"
+                android:label="Tambah Supplier">
         </activity>
         <activity
                 android:name=".SupplierActivity"
@@ -110,9 +130,13 @@
                 android:parentActivityName=".DashboardActivity"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".CRUD.EditSparepartActivity">
+        <activity
+                android:name=".CRUD.EditSparepartActivity"
+                android:label="Edit Sparepart">
         </activity>
-        <activity android:name=".CRUD.TambahSparepartActivity">
+        <activity
+                android:name=".CRUD.TambahSparepartActivity"
+                android:label="Tambah Sparepart">
         </activity>
         <activity
                 android:name=".SparepartActivity"
@@ -120,7 +144,9 @@
                 android:parentActivityName=".DashboardActivity"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".DashboardActivity">
+        <activity
+                android:name=".DashboardActivity"
+                android:label="Dashboard">
         </activity>
         <activity
                 android:name=".MainActivity"

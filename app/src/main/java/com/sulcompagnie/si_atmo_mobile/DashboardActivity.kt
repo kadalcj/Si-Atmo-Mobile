@@ -70,7 +70,7 @@ class DashboardActivity : AppCompatActivity() {
 
                     with(NotificationManagerCompat.from(this@DashboardActivity)) {
                         // notificationId is a unique int for each notification that you must define
-                        notify(1234, builder.build())
+                        notify(1122, builder.build())
                     }
                 }
                 else {

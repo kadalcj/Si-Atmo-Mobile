@@ -42,40 +42,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/TambahDetilPengadaanActivity.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/SparepartActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-              <folding>
-                <element signature="e#46#717#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/TambahPengadaanActivity.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/DetilPengadaanActivity.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="56" column="72" selection-start-line="56" selection-start-column="72" selection-end-line="56" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/UpdateStatusPengadaanActivity.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="48" column="46" lean-forward="true" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
+            <state relative-caret-position="104">
+              <caret line="96" column="65" selection-start-line="96" selection-start-column="65" selection-end-line="96" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -83,41 +53,89 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/Api/ApiClient.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="161" column="8" selection-start-line="161" selection-start-column="8" selection-end-line="161" selection-end-column="8" />
+            <state relative-caret-position="256">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_detil_pengadaan.xml">
-          <provider editor-type-id="text-editor" />
-          <provider selected="true" editor-type-id="android-designer2" />
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/DashboardActivity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="e#41#597#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/MainActivity.kt">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/Api/RetrofitClient.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+            <state relative-caret-position="170">
+              <caret line="10" column="72" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
+              <folding>
+                <element signature="e#45#151#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="text-editor" />
-          <provider selected="true" editor-type-id="android-designer2" />
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/WebViewLaporanServiceTerlarisActivity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_detil_pengadaan.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/HistoryTransaksiActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="35" column="10" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="10" />
+            <state relative-caret-position="357">
+              <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_web_view_laporan.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
             </state>
           </provider>
           <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/WebViewLaporanPendapatanBulananActivity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/LaporanActivity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" column="70" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/SupplierActivity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="529">
+              <caret line="72" column="40" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -152,6 +170,8 @@
       <find>DetilTransaksiSparepartAdapter</find>
       <find>spinner</find>
       <find>butto</find>
+      <find>search</find>
+      <find>pushno</find>
     </findStrings>
     <dirStrings>
       <dir>D:\GitHub\Si-Atmo-Mobile\app\src\main\java\com\sulcompagnie\si_atmo_mobile</dir>
@@ -178,12 +198,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/WebViewLaporanPengeluaranBulananActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/WebViewLaporanSisaStokActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/WebViewLaporanSparepartTerlarisActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/WebViewLaporanServiceTerlarisActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/LaporanActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/PengadaanLaporanActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_surat.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_surat_perintah_kerja.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/DashboardActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/SuratPerintahKerjaActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/Adapter/TransaksiAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/DAO/TransaksiSurat.kt" />
@@ -194,19 +212,16 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_nota_lunas.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/Adapter/NotaAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/SuratActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/WebViewNotaLunasActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/NotaLunasActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/TambahSparepartActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_sparepart.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/SisaStokBulananActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_pengadaan.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/Api/ApiClient.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/TambahPengadaanActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/Adapter/HistoryAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/DetilTransaksiSparepartActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_history_transaksi.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/Api/RetrofitClient.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_detil_pengadaan.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/DetilPengadaanActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
@@ -214,6 +229,11 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_detil_pengadaan.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_update_status_pengadaan.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/UpdateStatusPengadaanActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/Api/ApiClient.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/WebViewLaporanServiceTerlarisActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/Api/RetrofitClient.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/DashboardActivity.kt" />
       </list>
     </option>
   </component>
@@ -230,6 +250,7 @@
     <panes>
       <pane id="Scope" />
       <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -253,18 +274,24 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="si_atmo_mobile" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Si-Atmo-Mobile" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="si_atmo_mobile" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="CRUD" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="device.picker.selection" value="0123456789ABCDEF" />
+    <property name="device.picker.selection" value="0252d89a0604" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Compressed/CustomStyledSpinner-master" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -385,7 +412,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.12686567" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.20202559" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -441,52 +468,10 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/WebViewLaporanSisaStokActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="42" column="97" selection-start-line="42" selection-start-column="97" selection-end-line="42" selection-end-column="97" />
-          <folding>
-            <element signature="e#46#390#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/WebViewLaporanServiceTerlarisActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
-          <folding>
-            <element signature="e#46#367#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/LaporanActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="104" selection-start-line="34" selection-start-column="104" selection-end-line="34" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_supplier.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="45" lean-forward="true" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/DAO/Transaksi.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/SupplierActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -542,13 +527,6 @@
       <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/DAO/TransaksiSurat.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/SparepartActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="114" column="48" selection-start-line="114" selection-start-column="48" selection-end-line="114" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/PengadaanLaporanActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -571,16 +549,6 @@
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/DashboardActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-          <folding>
-            <element signature="e#41#597#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/SuratPerintahKerjaActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -621,14 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="67" column="41" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/Adapter/NotaAdapter.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="41">
@@ -636,13 +596,6 @@
           <folding>
             <element signature="e#49#373#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/WebViewLaporanPendapatanBulananActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -733,63 +686,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/Api/RetrofitClient.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-          <folding>
-            <element signature="e#45#151#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/TambahSparepartActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_detil_pengadaan.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="35" column="10" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="10" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/TambahPengadaanActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/TambahDetilPengadaanActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-          <folding>
-            <element signature="e#46#717#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/DetilPengadaanActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="56" column="72" selection-start-line="56" selection-start-column="72" selection-end-line="56" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/Api/ApiClient.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="161" column="8" selection-start-line="161" selection-start-column="8" selection-end-line="161" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -800,6 +700,27 @@
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/TambahDetilPengadaanActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/TambahPengadaanActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/DetilPengadaanActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="56" column="72" selection-start-line="56" selection-start-column="72" selection-end-line="56" selection-end-column="72" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_detil_pengadaan.xml">
       <provider editor-type-id="text-editor" />
@@ -812,10 +733,107 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tambah_detil_pengadaan.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="10" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="10" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/UpdateStatusPengadaanActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="48" column="46" lean-forward="true" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
+        <state relative-caret-position="239">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="127" column="48" lean-forward="true" selection-start-line="127" selection-start-column="48" selection-end-line="127" selection-end-column="48" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/SparepartActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="96" column="65" selection-start-line="96" selection-start-column="65" selection-end-line="96" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/SupplierActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="72" column="40" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/LaporanActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="70" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/WebViewLaporanPendapatanBulananActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_web_view_laporan.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/CRUD/WebViewLaporanServiceTerlarisActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/HistoryTransaksiActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/Api/ApiClient.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/DashboardActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#41#597#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sulcompagnie/si_atmo_mobile/Api/RetrofitClient.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="72" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
+          <folding>
+            <element signature="e#45#151#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
